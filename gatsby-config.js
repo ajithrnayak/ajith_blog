@@ -5,5 +5,12 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-sass`]
+  plugins: [`gatsby-plugin-sass`,
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/content`,
+      name: 'pages'
+    }
+  }]
 }
