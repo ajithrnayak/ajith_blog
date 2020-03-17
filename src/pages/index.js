@@ -1,7 +1,14 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 
-export default () => <Layout>
-  <p>blog list goes here...</p>
-  </Layout>
+const BlogList = ({ data, location }) => {
+
+  return (
+  <Layout>
+    <p>blog list goes here...</p>
+    </Layout>
+  )
+}
+
+export default BlogList
