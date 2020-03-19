@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './titleAndCaption.module.scss';
 
 const TitleAndCaption = ({data}) => {
   const { title, subtitle } = data
@@ -6,9 +7,9 @@ const TitleAndCaption = ({data}) => {
   console.log(subtitle);
 
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{subtitle}</p>
+    <div className={styles.titleAndCaption}>
+      <h2 className={styles.blogTitle}>{title}</h2>
+      <p className={styles.blogCaption}>{subtitle}</p>
     </div>
   );
 };
