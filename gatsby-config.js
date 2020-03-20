@@ -15,7 +15,8 @@ module.exports = {
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
-    author: siteConfig.author
+    author: siteConfig.author,
+    website: siteConfig.website
   },
   plugins: [
     `gatsby-plugin-sass`,
