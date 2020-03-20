@@ -20,6 +20,7 @@ export const useSiteMetadata = () => {
             subtitle
             copyright
             disqusShortname
+            website
           }
         }
       }

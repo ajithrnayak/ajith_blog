@@ -1,6 +1,6 @@
 import React from "react";
 import TitleAndCaption from '../titleAndCaption/titleAndCaption';
-import { useSiteMetadata } from '../../query/use-site-metadata'
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import styles from './header.module.scss';
 
 
