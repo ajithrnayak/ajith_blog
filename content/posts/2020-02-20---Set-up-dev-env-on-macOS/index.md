@@ -2,7 +2,7 @@
 title: How to setup my mac for development
 date: '2020-02-20T00:00:00.000Z'
 draft: false
-slug: "Set-up-dev-env-on-macOS"
+path: "/set-up-dev-env-on-macOS"
 category: "iOS Development"
 tags: ["Developer Guide", "macOS Setup"]
 excerpt: "A quick step-by-step guide to setup a mac for development."

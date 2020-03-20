@@ -2,7 +2,7 @@
 title: Newsletters, Blogs & Developers To Follow For iOS Developers
 date: '2016-09-26T00:00:00.000Z'
 draft: false
-slug: "Newsletters-Blogs-Developers-To-Follow"
+path: "/newsletters-blogs-developers-to-follow"
 category: "iOS Development"
 tags: ["iOS Developers", "iOS Resources"]
 excerpt: "As a full-time iOS developer, everyday I’ll be [paddling](http://giphy.com/gifs/dACqNmvAfY12M/html5) towards that tight project deadline against the high winds. And, I seldom have time to stay in touch with latest trends, announcements, innovations, articles and open source inspirations surrounding iOS development. It’s difficult to stay on top of my iOS game. Can you relate?"
