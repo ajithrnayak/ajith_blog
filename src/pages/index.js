@@ -1,13 +1,41 @@
-import React from "react"
-import Layout from "../components/layout/layout"
+import React from "react";
+import { graphql } from 'gatsby';
+import Layout from "../components/layout/layout";
+import Posts from "../components/posts/posts";
 
-const BlogList = ({ data, location }) => {
-
+const BlogIndex = ({ data, location }) => {
+  const { edges } = data.allMarkdownRemark
   return (
-  <Layout>
-    <p>blog list goes here...</p>
-  </Layout>
+    <Layout>
+      <Posts posts={edges}/>
+    </Layout>
   );
 };
 
-export default BlogList;
+export default BlogIndex;
+
+
+export const postsQuery = graphql`
+  query PostsQuery 
+  {
+    allMarkdownRemark 
+    {
+      edges 
+      {
+        node 
+        {
+          timeToRead
+          frontmatter 
+          {
+            category
+            date(formatString: "MMMM DD, YYYY")
+            excerpt
+            path
+            tags
+            title
+          }
+        }
+      }
+    }
+  }
+`
