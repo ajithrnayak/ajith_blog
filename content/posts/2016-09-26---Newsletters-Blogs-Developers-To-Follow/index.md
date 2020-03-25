@@ -8,8 +8,6 @@ tags: ["iOS Developers", "iOS Resources"]
 excerpt: "As a full-time iOS developer, everyday I’ll be [paddling](http://giphy.com/gifs/dACqNmvAfY12M/html5) towards that tight project deadline against the high winds. And, I seldom have time to stay in touch with latest trends, announcements, innovations, articles and open source inspirations surrounding iOS development. It’s difficult to stay on top of my iOS game. Can you relate?"
 ---
 
-# Newsletters, Blogs/Developers & Companies To Follow for iOS Developers
-
 As a full-time iOS developer, everyday I’ll be [paddling](http://giphy.com/gifs/dACqNmvAfY12M/html5) towards that tight project deadline against the high winds. And, I seldom have time to stay in touch with latest trends, announcements, innovations, articles and open source inspirations surrounding iOS development. It’s difficult to stay on top of my iOS game.
 
 Can you relate?

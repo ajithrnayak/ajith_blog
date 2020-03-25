@@ -8,8 +8,6 @@ tags: ["Developer Guide", "macOS Setup"]
 excerpt: "A quick step-by-step guide to setup a mac for development."
 ---
 
-# How to setup my mac for development
-
 A quick step-by-step guide to setup a mac for development.
 
 Currnet version:
