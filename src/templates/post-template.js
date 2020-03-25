@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout/layout"
 import Pagination from "../components/pagination/pagination"
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -9,11 +10,13 @@ const PostTemplate = ({ data, pageContext }) => {
   const { previous, next } = pageContext
 
   return (
-    <div>
+     <Layout>
+       <div>
       <h1>{title}</h1>
+      </div>
       <div className="blogPost" dangerouslySetInnerHTML={{ __html: html }} />
       <Pagination previous={previous} next={next} />
-    </div>
+      </Layout>
   )
 }
 
