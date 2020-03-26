@@ -4,7 +4,7 @@ date: '2020-01-13T00:00:00.000Z'
 draft: false
 path: "/iOS-design-guide"
 category: "Design"
-tags: ["Design Guidelines", "HIG"]
+tag: "Design Guidelines"
 excerpt: "A guide of standard practices, official guidelines(HIG) for designing iOS/iPadOS applications. This cheat sheet is mainly an attempt to keep track of wide variety of devices and their design constraints that are updated regularly."
 ---
 

@@ -4,7 +4,7 @@ date: '2020-02-20T00:00:00.000Z'
 draft: false
 path: "/set-up-dev-env-on-macOS"
 category: "iOS Development"
-tags: ["Developer Guide", "macOS Setup"]
+tag: "Developer Guide"
 excerpt: "A quick step-by-step guide to setup a mac for development."
 ---
 
