@@ -25,7 +25,7 @@ export const postsQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             excerpt
             path
-            tags
+            tag
             title
           }
         }

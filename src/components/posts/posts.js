@@ -12,6 +12,8 @@ const Posts = ({ posts }) => {
             <Link to={frontmatter.path}>
               {frontmatter.title}
               </Link>
+        <p>{frontmatter.date} – {frontmatter.tag} </p>
+        <p>{frontmatter.excerpt}</p>
           </div>
         )
       })}
