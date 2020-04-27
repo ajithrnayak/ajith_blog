@@ -1,0 +1,37 @@
+
+// Configurations
+
+// Buttons
+$button-height: 35px;
+$button-border-radius: 4px;
+
+// Layout
+$layout-width: 960px;
+// Layout breakpoints
+$layout-breakpoint-sm: 685px;
+$layout-breakpoint-md: 960px;
+$layout-breakpoint-lg: 1100px;
+
+// z-index for various elements
+// usage: $zindex - {map}
+// @source - http://www.sitepoint.com/using-sass-maps/
+$zindex: (
+  overlay: 9000,
+  dropdown: 8000,
+  nav: 7000,
+  header: 6000,
+  footer: 5000,
+  pseduo: 4000,
+  default: 1,
+  bottomless-pit: -10000,
+);
+
+// Define width for browsers w/out media query support
+// usage: $fix-mqs - {boolean}
+// @source  - http://jakearchibald.github.com/sass-ie/
+$fix-mqs: false !default;
+
+// Turn on/off IE specific styles
+// usage: $old-ie - {boolean}
+// @source  - http://jakearchibald.github.com/sass-ie/
+$old-ie: false !default;
