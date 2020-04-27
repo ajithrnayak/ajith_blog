@@ -1,0 +1,72 @@
+
+/* Pacifico
+-------------
+Generated using https://www.fontsquirrel.com */
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../../static/fonts/Pacifico/pacifico-regular-webfont.woff2') format('woff2'),
+       url('../../static/fonts/Pacifico/pacifico-regular-webfont.woff') format('woff'),
+       url('../../static/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Maven Pro
+-------------- 
+Generated using http://transfonter.org/ */
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../../static/fonts/Maven_Pro/MavenPro-Bold.woff2') format('woff2'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Bold.woff') format('woff'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Bold.woff') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../../static/fonts/Maven_Pro/MavenPro-Medium.woff2') format('woff2'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Medium.woff') format('woff'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Medium.woff') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../../static/fonts/Maven_Pro/MavenPro-Regular.woff2') format('woff2'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Regular.woff') format('woff'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Regular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff2') format('woff2'),
+      url('../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff') format('woff'),
+      url('../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../../static/fonts/Maven_Pro/MavenPro-Black.woff2') format('woff2'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Black.woff') format('woff'),
+      url('../../static/fonts/Maven_Pro/MavenPro-Black.woff') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff2') format('woff2'),
+      url('../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff') format('woff'),
+      url('../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
