@@ -1,18 +1,43 @@
+@import "../../styles/theme";
 
 .titleAndCaption {
-  margin: 0;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.titleLink {
+  text-decoration: none;
 }
 
 .blogTitle {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
-  color: #70C80F;
+  font-family: $title-font-family;
+  font-size: $title-font-size;
+  color: $color-primary;
+  margin-bottom: 0.3em;
 }
 
 .blogCaption {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: #617073;
+  margin: auto;
+  font-family: $base-font-family-default;
+  font-size: $base-font-size;
+  color: $color-text-caption;
+  display: flex;
+  flex-direction: row;
+}
+
+.website {
+  padding-left: 5px;
+  a {
+    font-weight: $medium;
+    color: $color-text-caption;
+    text-decoration: none;
+    border-bottom: 1px solid $color-underline;
+
+    &:hover,
+    &:focus {
+      color: $color-link-hover;
+    }
+  }
 }

@@ -1,12 +1,19 @@
 import React from "react";
+import { Link } from "gatsby"
 import styles from './titleAndCaption.module.scss';
 
 const TitleAndCaption = ({data}) => {
-  const { title, subtitle } = data
+  const { title, subtitle, website } = data
+
   return (
     <div className={styles.titleAndCaption}>
+      <Link className={styles.titleLink} to={`/`}>
       <h2 className={styles.blogTitle}>{title}</h2>
-      <p className={styles.blogCaption}>{subtitle}</p>
+      </Link>
+      <div className={styles.blogCaption}>
+      <p>{subtitle}</p>
+      <p className={styles.website}>Checkout my <a href={website}>website.</a></p>
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://ajith.blog',
   pathPrefix: '/',
   title: "Ajith's blog",
-  subtitle: 'I occasionally blog here. Checkout my website.',
+  subtitle: 'I occasionally blog here.',
   copyright: 'Designed & developed by Ajith R Nayak',
   disqusShortname: 'ajithrnayak',
   postsPerPage: 10,
