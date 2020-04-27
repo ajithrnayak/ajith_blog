@@ -1,0 +1,25 @@
+// Typography
+
+$font-name: 'Maven Pro';
+$title-font-name: 'Pacifico';
+
+$title-font-size: 48px;
+$root-font-size: 18px;
+$base-font-size: 18px;
+$small-font-size: 14px;
+
+$base-line-height: 28px;
+
+$bold: bold;
+$medium: 500;
+$regular: normal;
+$semibold: 600;
+$extrabold: 800;
+$black: 900;
+// Fonts
+
+$base-font-family-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$base-font-family-default: $font-name, $base-font-family-fallback;
+
+$title-font-family-fallback: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+$title-font-family: $title-font-name, $title-font-family-fallback;
