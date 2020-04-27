@@ -1,0 +1,35 @@
+@import "../../styles/theme";
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid $color-secondary;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  bottom: 0;
+  height: 2.5em;
+  width: inherit;
+  max-width: inherit;
+}
+
+.copyright {
+  color: $color-secondary;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}
+
+.sourcecode {
+  color: $color-secondary;
+  font-weight: $bold;
+  text-decoration: none;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-link-hover;
+  }
+}

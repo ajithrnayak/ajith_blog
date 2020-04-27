@@ -8,9 +8,9 @@ const Header = () => {
   const data = useSiteMetadata();
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
     <TitleAndCaption data={data}/>
-    </div>
+    </header>
   );
 };
 
