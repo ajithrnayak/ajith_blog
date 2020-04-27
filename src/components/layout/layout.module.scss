@@ -1,5 +1,22 @@
+@import "../../styles/theme";
 
-.layout {
-  background-color: #F5F5F5;
-  color: black;
+.layout { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $layout-width;
+  width: 100%;  
+}
+
+body {
+  background: $color-background-dark;
+  height: 100vh;
+  width: 100%;
+}
+
+.light-bg {
+  background: $color-background-light;
 }
