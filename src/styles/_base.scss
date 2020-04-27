@@ -1,0 +1,90 @@
+@import "mixins/scrollbars";
+
+/** 
+ * html elements
+ */
+
+html {
+  font-size: $root-font-size;
+  box-sizing: border-box;
+}
+
+* {
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+div,
+section,
+span,
+svg,
+a,
+li {
+  margin-top: 0;
+}
+
+// Responsive Images
+// ---------------
+embed,
+iframe,
+img,
+object,
+video,
+canvas,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+// Table layouts
+// ---------------
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+// Figure intrinsic sizing
+// ---------------
+figure {
+  max-width: max-content;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  > img {
+    display: block;
+    height: auto;
+  }
+}
+
+// Scrollbars
+// ---------------
+body {
+  @include scrollbars(0.5em, $color-primary);
+}
+
+// Scrollbars
+// ---------------
+/*
+body {
+  @include link-colors(
+    $color-link,
+    $color-link-visited,
+    $color-link-hover,
+    $color-link
+  );
+}
+*/
+
+body {
+  color: $color-text-dark;
+  font-family: $base-font-family-default;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
