@@ -1,0 +1,38 @@
+@import "../../styles/theme";
+
+.feed {
+  position: relative;
+  color: inherit;
+  margin-top: 1.5em;
+}
+
+.feed_item {
+  margin-bottom: 3em;
+}
+
+.post_title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: $bold;
+}
+
+.post_title_link {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-link-hover;
+  }
+}
+
+.post_meta {
+  color: $color-secondary;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+.post_excerpt {
+  color: inherit;
+  margin: 0;
+}

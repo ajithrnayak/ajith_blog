@@ -1,22 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
-import Posts from "../components/posts/posts"
+import Feed from "../components/feed/feed"
 
-const BlogIndex = ({ data, location }) => {
+const BlogFeed = ({ data, location }) => {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-      <Posts posts={edges} />
+      <Feed posts={edges} />
     </Layout>
   )
 }
 
-export default BlogIndex
+export default BlogFeed
 
 export const postsQuery = graphql`
   query PostsQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           timeToRead
