@@ -17,6 +17,7 @@ module.exports = {
     disqusShortname: siteConfig.disqusShortname,
     author: siteConfig.author,
     website: siteConfig.website,
+    sourceCode: siteConfig.sourceCode
   },
   plugins: [
     `gatsby-plugin-sass`,

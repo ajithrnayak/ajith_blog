@@ -21,6 +21,7 @@ export const useSiteMetadata = () => {
             copyright
             disqusShortname
             website
+            sourceCode
           }
         }
       }
