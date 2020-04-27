@@ -1,0 +1,44 @@
+// Color Palette
+// See: http://smacss.com 
+// See: http://chir.ag/projects/name-that-color/#F5F5F5 
+
+// descriptive colors
+// =============
+
+$vantage-green:             #70C80F;
+$white-smoke:               #F5F5F5;
+$eerie-black:               #171A21;
+$nickel:                    #617073;
+$white:                     #fff;
+$black:                     #000;
+$silly-blue:                #b3d4fc;
+
+// main color palette
+// =============
+$color-primary:             $vantage-green;
+$color-secondary:           $nickel;
+$color-accent:              $vantage-green;
+$color-shadow:              rgba($black, .125);
+
+// Common colors
+$color-background-light:      $white-smoke;
+$color-background-dark:       $eerie-black;
+$color-text-light:            $eerie-black;
+$color-text-dark:             $white-smoke;
+$color-text-caption:          $color-secondary;
+$color-underline:             $color-primary;
+$color-text-title:            $color-primary;
+// Links
+$color-link:                $color-secondary;
+$color-link-hover:          $color-primary;
+$color-link-visited:        mix($color-primary, white, 50%);
+
+// Selections
+$color-selection:           $silly-blue;
+
+// Messages
+$color-message:             #f4ecbb;
+$color-success:             #2cde2c;
+$color-warning:             #cf8600;
+$color-important:           #d00;
+$color-notice:              #66b;
