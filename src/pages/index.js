@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Feed from "../components/feed/feed"
 
-const BlogFeed = ({ data, location }) => {
+const BlogFeed = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout>
