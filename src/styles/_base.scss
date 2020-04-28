@@ -88,3 +88,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+p {
+  line-height: $base-line-height;
+  margin-bottom: 1em;
+}
+
+b,
+strong {
+  font-weight: $bold;
+}
+
+ul {
+  list-style: square;
+  margin-bottom: 1em;
+
+  & li {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.anchor {
+  margin-left: -30px !important;
+  padding-right: 14px !important;
+}
