@@ -9,7 +9,14 @@ const Footer = () => {
   return (
     <footer>
       <p className={styles.copyright}>{copyright}</p>
-      <a href={sourceCode} target="_blank" className={styles.sourcecode}>View Source Code</a>
+      <a
+        href={sourceCode}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.sourcecode}
+      >
+        View Source Code
+      </a>
     </footer>
   )
 }
