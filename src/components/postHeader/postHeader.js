@@ -3,15 +3,17 @@ import styles from "./postHeader.module.scss"
 
 const PostHeader = ({ frontmatter, timeToRead }) => {
   const { title } = frontmatter
+  const { date, tag } = frontmatter
+
   return (
-    <div>
-      <h1>{title}</h1>
-      <div>
-        <p>
-          {frontmatter.date} – {frontmatter.tag}{" "}
-        </p>
-  <p>{timeToRead} min read</p>
-      </div>
+    <div className={styles.post_header}>
+      <h1 className={styles.post_title}>{title}</h1>
+      <div className={styles.post_caption}>
+              <p>
+                <time>{date}</time> {` – `} {tag}
+              </p>
+              <p>{timeToRead} min read</p>
+            </div>
     </div>
   )
 }

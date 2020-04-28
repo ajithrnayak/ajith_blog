@@ -1,18 +1,20 @@
+@import "../../styles/theme";
 
-.postHeader {
-  margin: 0;
+.post_header {
+  max-width: inherit;
+  width: inherit;
+  margin-bottom: 2em;
 }
 
-.blogTitle {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
-  color: #70C80F;
+.post_title {
+  font-family: inherit;
+  font-weight: $medium;
+  font-size: 2.6em;
 }
 
-.blogCaption {
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: #617073;
+.post_caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $color-text-caption;
 }
