@@ -107,26 +107,6 @@ After you are done, activate this globally by running
 $ git config --global core.excludesfile ~/.gitignore
 ```
 
-#### Install oh my zsh
-
-Updating to catalina changed `bash` to `zsh` and this tool saved my hairfall.
-
-Read more about the tool here https://github.com/ohmyzsh/ohmyzsh
-
-Run following command in Terminal for quick install.
-
-```bash
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-#### Install Homebrew
-
-A package manager for macOS and is going to usefull for managing quite a few essential packages.
-
-```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
 #### Install Cocoapods
 
 CocoaPods is a package manager for iOS development. It is built with Ruby and is installable with the default Ruby available on macOS. Default ruby is recommended.
@@ -148,7 +128,6 @@ brew install fastlane
 ```
 
 
-
 #### Install nvm
 
 For nodejs development, open [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) and to install,
@@ -163,8 +142,10 @@ Open `~/.zshrc` and see if these lines are present. (if not, add it)
 
 ```bash
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 ```
 
 #### Install Node
