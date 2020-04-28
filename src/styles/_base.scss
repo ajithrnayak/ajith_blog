@@ -1,4 +1,5 @@
 @import "mixins/scrollbars";
+@import "theme";
 
 /** 
  * html elements
@@ -66,7 +67,7 @@ body {
   @include scrollbars(0.5em, $color-primary);
 }
 
-// Scrollbars
+// Anchor tags
 // ---------------
 /*
 body {
@@ -80,7 +81,8 @@ body {
 */
 
 body {
-  color: $color-text-dark;
+  @include color-assign(background-color, background);
+  @include color-assign(color, text_color);
   font-family: $base-font-family-default;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

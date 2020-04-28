@@ -1,3 +1,67 @@
 @import "common/typography";
 @import "common/colors";
 @import "common/config";
+
+$theme: (
+  light: (
+    background: $color-background-light,
+    text_color: $color-text-light,
+  ),
+  dark: (
+    background: $color-background-dark,
+    text_color: $color-text-dark,
+  ),
+);
+
+@function compose-color-variable($color-key) {
+  @return "--color-#{$color-key}";
+}
+
+:root {
+  @each $key, $value in map-get($theme, "light") {
+    #{compose-color-variable($key)}: #{$value};
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $key, $value in map-get($theme, "dark") {
+      #{compose-color-variable($key)}: #{$value};
+    }
+  }
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if not $index {
+    @return $string;
+  }
+
+  @return str-slice($string, 1, $index - 1) + $replace +
+    str-replace(
+      str-slice($string, $index + str-length($search)),
+      $search,
+      $replace
+    );
+}
+
+@function color-get($palette, $color-key) {
+  @return map-get(map-get($theme, $palette), $color-key);
+}
+
+@mixin color-assign($property, $color-key, $template: "") {
+  $fallback: #{color-get("light", $color-key)};
+  $var: var(#{compose-color-variable($color-key)});
+
+  #{$property}: if(
+    str-length($template) == 0,
+    $fallback,
+    #{str-replace($template, $color-fallback, $fallback)}
+  );
+  #{$property}: if(
+    str-length($template) == 0,
+    $var,
+    #{str-replace($template, $color-fallback, $var)}
+  );
+}
