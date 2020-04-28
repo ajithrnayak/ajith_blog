@@ -4,7 +4,7 @@ import styles from "./pagination.module.scss"
 
 const Pagination = ({ previous, next }) => {
   return (
-    <div>
+    <div className={styles.pagination_container}>
       <nav>
         <ul className={styles.pagination}>
           <li>
