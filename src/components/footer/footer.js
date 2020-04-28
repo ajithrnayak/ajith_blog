@@ -5,7 +5,7 @@ import { useSiteMetadata } from "../../hooks/use-site-metadata"
 const Footer = () => {
   const data = useSiteMetadata()
   const { copyright, sourceCode } = data
-  console.log(data)
+
   return (
     <footer>
       <p className={styles.copyright}>{copyright}</p>
