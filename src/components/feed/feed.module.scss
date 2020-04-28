@@ -2,6 +2,7 @@
 
 .feed {
   position: relative;
+  color: inherit;
   margin-top: 1.5em;
 }
 
@@ -18,6 +19,7 @@
 
 .post_title_link {
   text-decoration: none;
+  color: inherit;
   &:hover,
   &:focus {
     border-bottom: 1px solid $color-link-hover;
@@ -31,5 +33,6 @@
 }
 
 .post_excerpt {
+  color: inherit;
   margin: 0;
 }
