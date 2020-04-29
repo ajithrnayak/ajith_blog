@@ -59,21 +59,22 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: siteConfig.title,
         short_name: siteConfig.title,
-        start_url: '/',
-        background_color: '#171A21',
-        theme_color: '#70C80F',
+        start_url: "/",
+        background_color: "#171A21",
+        theme_color: "#70C80F",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: 'standalone',
-        icon: 'static/images/logo-icon.png', // This path is relative to the root of the site.
+        display: "standalone",
+        icon: "static/images/logo-icon.png", // This path is relative to the root of the site.
       },
     },
-    // The offline plugin should be listed after the manifest plugin 
+    // The offline plugin should be listed after the manifest plugin
     // so that the offline plugin can cache the created manifest.webmanifest.
     `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
