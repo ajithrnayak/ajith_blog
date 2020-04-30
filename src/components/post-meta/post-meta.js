@@ -1,12 +1,12 @@
 import React from "react"
-import styles from "./postHeader.module.scss"
+import styles from "./post-meta.module.scss"
 
-const PostHeader = ({ frontmatter, timeToRead }) => {
+const PostMeta = ({ frontmatter, timeToRead }) => {
   const { title } = frontmatter
   const { date, tag } = frontmatter
 
   return (
-    <div className={styles.post_header}>
+    <div className={styles.post_meta}>
       <h1 className={styles.post_title}>{title}</h1>
       <div className={styles.post_caption}>
               <p>
@@ -18,4 +18,4 @@ const PostHeader = ({ frontmatter, timeToRead }) => {
   )
 }
 
-export default PostHeader
+export default PostMeta

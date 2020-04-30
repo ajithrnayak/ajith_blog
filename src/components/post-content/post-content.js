@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./postContent.module.scss"
+import styles from "./post-content.module.scss"
 
 const PostContent = ({ markdownRemark }) => {
   const html = markdownRemark.html

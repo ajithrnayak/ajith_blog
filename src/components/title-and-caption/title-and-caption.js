@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby"
-import styles from './titleAndCaption.module.scss';
+import styles from './title-and-caption.module.scss';
 
 const TitleAndCaption = ({data}) => {
   const { title, subtitle, website } = data

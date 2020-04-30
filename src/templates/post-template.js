@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
-import PostHeader from "../components/postHeader/postHeader"
-import PostContent from "../components/PostContent/postContent"
+import PostMeta from "../components/post-meta/post-meta"
+import PostContent from "../components/post-content/post-content"
 import Pagination from "../components/pagination/pagination"
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -13,7 +13,7 @@ const PostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <PostHeader frontmatter={frontmatter} timeToRead={timeToRead} />
+      <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
       <PostContent markdownRemark={markdownRemark}/>
       <Pagination previous={previous} next={next} />
     </Layout>
