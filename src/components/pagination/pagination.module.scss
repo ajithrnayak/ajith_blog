@@ -1,6 +1,7 @@
+@import "../../styles/theme";
 
 .pagination_container {
-  margin-top: 3.5em;
+  margin-top: 4.5em;
 }
 
 .pagination {
@@ -9,4 +10,20 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
+}
+
+.previous {
+  display: block;
+  text-align: left;
+  color: $color-secondary;
+}
+
+.next {
+  display: block;
+  text-align: right;
+}
+
+.pagination_label {
+  margin-bottom: 0;
+  color: $color-secondary;
 }

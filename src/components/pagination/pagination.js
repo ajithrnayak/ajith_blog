@@ -9,16 +9,22 @@ const Pagination = ({ previous, next }) => {
         <ul className={styles.pagination}>
           <li>
             {previous && (
-              <Link to={previous.frontmatter.path} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+              <div className={styles.previous}>
+                <p className={styles.pagination_label}>Previous</p>
+                <Link to={previous.frontmatter.path} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              </div>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.frontmatter.path} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+              <div className={styles.next}>
+                <p className={styles.pagination_label}>Next</p>
+                <Link to={next.frontmatter.path} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              </div>
             )}
           </li>
         </ul>
