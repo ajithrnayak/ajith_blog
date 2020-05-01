@@ -2,11 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Feed from "../components/feed/feed"
+import SEO from "../components/seo"
 
 const BlogFeed = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout>
+      <SEO title="All posts" />
       <Feed posts={edges} />
     </Layout>
   )
