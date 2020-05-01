@@ -1,9 +1,9 @@
 /**
- * Read more about hooks 
+ * Read more about hooks
  * https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from "gatsby"
 
 export const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -17,11 +17,13 @@ export const useSiteMetadata = () => {
             }
             url
             title
+            description
             subtitle
             copyright
             disqusShortname
             website
             sourceCode
+            twitterUsername
           }
         }
       }
@@ -29,4 +31,4 @@ export const useSiteMetadata = () => {
   )
 
   return site.siteMetadata
-};
+}

@@ -12,12 +12,14 @@ module.exports = {
   siteMetadata: {
     url: siteConfig.url,
     title: siteConfig.title,
+    description: siteConfig.description,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     author: siteConfig.author,
     website: siteConfig.website,
     sourceCode: siteConfig.sourceCode,
+    twitterUsername: siteConfig.social.twitter,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -69,7 +71,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: "static/images/logo-icon.png", // This path is relative to the root of the site.
+        icon: siteConfig.image,
       },
     },
     // The offline plugin should be listed after the manifest plugin

@@ -8,6 +8,7 @@ module.exports = {
     "I build apps and sometimes write about the observations and frustrations at work here.",
   subtitle: "I occasionally blog here.",
   copyright: "Designed & developed by Ajith R Nayak",
+  image: "static/images/logo-icon.png",
   disqusShortname: "ajithrnayak",
   postsPerPage: 10,
   googleAnalyticsId: "UA-43294206-2",
@@ -16,5 +17,8 @@ module.exports = {
   author: {
     name: "Ajith R Nayak",
     bio: "Swift/Objective-C developer since iOS 6.",
+  },
+  social: {
+    twitter: `ajthrnayak`,
   },
 }
