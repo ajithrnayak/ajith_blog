@@ -42,11 +42,21 @@ module.exports = {
       options: {
         plugins: [
           {
+            // https://www.gatsbyjs.org/packages/gatsby-remark-external-links
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer",
+            },
+          },
+          {
+            // https://www.gatsbyjs.org/packages/gatsby-remark-images
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 960,
-              withWebp: true,
-              ignoreFileExtensions: [],
+              maxWidth: 700,
+              linkImagesToOriginal: true,
+              quality: 90,
+              tracedSVG: { color: "#70C80F" },
             },
           },
           {
@@ -54,7 +64,15 @@ module.exports = {
             options: { wrapperStyle: "margin-bottom: 1.0725rem" },
           },
           "gatsby-remark-autolink-headers",
-          "gatsby-remark-prismjs",
+          /** Note: if you are using gatsby-remark-prismjs, make sure that it’s listed after this plugin.
+           *  Otherwise, you might face an issue described here: https://github.com/gatsbyjs/gatsby/issues/5764. */
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: { sh: "bash", js: "javascript" },
+              showLineNumbers: false,
+            },
+          },
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
         ],
@@ -74,6 +92,8 @@ module.exports = {
         icon: siteConfig.image,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     // The offline plugin should be listed after the manifest plugin
     // so that the offline plugin can cache the created manifest.webmanifest.
     `gatsby-plugin-offline`,
