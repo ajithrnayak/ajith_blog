@@ -4,6 +4,7 @@ import Layout from "../components/layout/layout"
 import PostMeta from "../components/post-meta/post-meta"
 import PostContent from "../components/post-content/post-content"
 import Pagination from "../components/pagination/pagination"
+import BuyMeCoffee from "../components/buymecoffee/buymecoffee"
 import SEO from "../components/seo"
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -23,6 +24,7 @@ const PostTemplate = ({ data, pageContext }) => {
       />
       <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
       <PostContent markdownRemark={markdownRemark} />
+      <BuyMeCoffee />
       <Pagination previous={previous} next={next} />
     </Layout>
   )
