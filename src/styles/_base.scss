@@ -138,7 +138,7 @@ ul {
 
 p {
   @include line-height(1);
-  margin-bottom: 1em;
+  @include margin-bottom(1);
 }
 
 blockquote {
@@ -147,7 +147,7 @@ blockquote {
   border-left-width: 1px;
   margin-left: 0px;
   margin-right: 0px;
-  padding-left: 1.5rem;
+  @include padding-left(1.5);
 }
 
 figure {
@@ -194,18 +194,5 @@ table {
 // Scrollbars
 // ---------------
 body {
-  @include scrollbars(0.5em, $color-primary);
+  @include scrollbars(4px, $color-primary);
 }
-
-// Anchor tags
-// ---------------
-/*
-body {
-  @include link-colors(
-    $color-link,
-    $color-link-visited,
-    $color-link-hover,
-    $color-link
-  );
-}
-*/

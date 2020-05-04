@@ -3,8 +3,9 @@
 $font-name: "Maven Pro";
 $title-font-name: "Pacifico";
 
-$title-font-size: 48px;
 $root-font-size: 18px;
+
+$title-font-size: 48px;
 $base-font-size: 18px;
 $small-font-size: 16px;
 
@@ -12,7 +13,7 @@ $base-line-height: 1.56;
 
 // @see https://zellwk.com/blog/rem-vs-em/
 // Instead of using `em` or `rem`, we will use this property to compute units for child elements
-$base-root-unit: round($base-font-size * $base-line-height);
+$root-em: round(18 * $base-line-height);
 
 // font weight
 $bold: bold;

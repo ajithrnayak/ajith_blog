@@ -1,14 +1,25 @@
+@import "../theme";
+
 
 /** Line-Height */
  @mixin line-height($number) {
-  line-height: #{ $number * $base-root-unit + "px"};
+  line-height: #{ $number * $root-em + "px"};
 }
 
 /** Margin */
  @mixin margin-top($number) {
-  margin-top: #{ $number * $base-root-unit + "px"};
+  margin-top: #{ $number * $root-em + "px"};
 }
 
 @mixin margin-bottom($number) {
-  margin-bottom: #{ $number * $base-root-unit + "px"};
+  margin-bottom: #{ $number * $root-em + "px"};
+}
+
+
+@mixin padding-left($number) {
+  padding-left: #{ $number * $root-em + "px"};
+}
+
+@mixin padding-right($number) {
+  padding-right: #{ $number * $root-em + "px"};
 }
