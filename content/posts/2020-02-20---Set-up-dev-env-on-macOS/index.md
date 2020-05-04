@@ -1,6 +1,6 @@
 ---
 title: How to setup my mac for development
-date: '2020-02-20T00:00:00.000Z'
+date: "2020-02-20T00:00:00.000Z"
 draft: false
 path: "/set-up-dev-env-on-macOS"
 category: "iOS Development"
@@ -127,7 +127,6 @@ sudo gem install fastlane -NV
 brew install fastlane
 ```
 
-
 #### Install nvm
 
 For nodejs development, open [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) and to install,
@@ -145,7 +144,7 @@ export NVM_DIR="$HOME/.nvm"
 # This loads nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 ```
 
 #### Install Node
@@ -155,18 +154,14 @@ Open Terminal and run following command. Remember to restart Terminal before che
 ```bash
 $ brew install node    # this will install latest
 # or
-$ nvm install node    # this will install latest 
+$ nvm install node    # this will install latest
 # or
 $ nvm install 10.1    # this will install version 10.1
 ```
 
-Or, download the latest Node.js version from [the official Node.js website](https://nodejs.org/en/), double click on the downloaded file and go through the installation process.  
-
-
+Or, download the latest Node.js version from [the official Node.js website](https://nodejs.org/en/), double click on the downloaded file and go through the installation process.
 
 To confirm that this worked, you can run `npm --version` and `node --version`.
-
-
 
 #### Install Sourcetree
 
@@ -174,10 +169,6 @@ A free Git client for Mac and the one I'm very familiar with.
 
 Either download from official website https://www.sourcetreeapp.com or from Mac Appstore.
 
-
-
 That will do for now to set up my development environment on a macOS.
-
-
 
 Happy Coding!
