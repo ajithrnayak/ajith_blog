@@ -1,19 +1,24 @@
 @import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
 
 .feed {
   position: relative;
   color: inherit;
-  margin-top: 1.5em;
+  @include margin-bottom(3.5);
 }
 
 .feed_item {
-  margin-bottom: 3em;
+  @include margin-bottom(1.7857);
+}
+
+.feed_item_header {
+  @include margin-bottom(0.5714);
 }
 
 .post_title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.5em;
+  font-size: $base-font-size * 1.5;
   font-weight: $bold;
 }
 
@@ -29,7 +34,6 @@
 .post_meta {
   color: $color-secondary;
   margin-top: 0;
-  margin-bottom: 0.75em;
 }
 
 .post_excerpt {

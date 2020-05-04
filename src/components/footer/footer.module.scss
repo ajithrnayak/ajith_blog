@@ -1,35 +1,29 @@
 @import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
 
 footer {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   border-top: 2px solid $color-secondary;
-  margin-top: 2em;
-  margin-bottom: 2em;
   bottom: 0;
-  height: 3.5em;
+  height: 100px;
   width: inherit;
   max-width: inherit;
+  @include margin-bottom(2.5714);
 }
 
 .copyright {
   color: $color-secondary;
-  margin-top: 1em;
-  margin-bottom: 1.2em;
+  @include margin-top(0.5714);
 }
 
 .sourcecode {
   color: $color-secondary;
-  font-weight: $bold;
+  font-weight: $medium;
   text-decoration: none;
-  margin-top: 1em;
-  margin-bottom: 1.2em;
-
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid $color-link-hover;
-  }
+  @include margin-top(0.5714);
+  margin-bottom: 0;
 }

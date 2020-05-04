@@ -1,7 +1,7 @@
 @import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
 
 .titleAndCaption {
-  margin-top: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,19 +15,23 @@
 }
 
 .blogTitle {
-  margin-bottom: 0.4em;
+    @include margin-top(0);
 }
 
 .blogCaption {
-  margin: auto;
   font-family: $base-font-family-default;
   font-size: $base-font-size;
   color: $color-text-caption;
   display: inline;
+
+  p {
+    @include margin-bottom(0.2);
+  }
 }
 
 .website {
   padding-left: 5px;
+
   a {
     font-weight: $medium;
     color: $color-text-caption;

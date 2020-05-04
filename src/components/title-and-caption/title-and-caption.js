@@ -7,11 +7,11 @@ const TitleAndCaption = ({ data }) => {
 
   return (
     <div className={styles.titleAndCaption}>
-      <h2 className={styles.blogTitle}>
+      <h1 className={styles.blogTitle}>
         <Link className={styles.titleLink} to={`/`}>
           {title}
         </Link>
-      </h2>
+      </h1>
       <div className={styles.blogCaption}>
         <p>
           {subtitle}

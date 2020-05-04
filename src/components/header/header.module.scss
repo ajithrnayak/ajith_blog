@@ -1,7 +1,19 @@
+@import "../../styles/mixins/rhythm";
+@import "../../styles/mixins/breakpoints";
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 2rem;
   width: inherit;
+  @include margin-top(1.8);
+  @include margin-bottom(2.5);
+}
+
+
+@include breakpoint-sm {
+
+  .header {
+    @include margin-bottom(1.8);
+  }
 }
