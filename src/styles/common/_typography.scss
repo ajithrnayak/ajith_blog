@@ -1,25 +1,32 @@
 // Typography
 
-$font-name: 'Maven Pro';
-$title-font-name: 'Pacifico';
+$font-name: "Maven Pro";
+$title-font-name: "Pacifico";
 
 $title-font-size: 48px;
 $root-font-size: 18px;
 $base-font-size: 18px;
-$small-font-size: 14px;
+$small-font-size: 16px;
 
-$base-line-height: 28px;
+$base-line-height: 1.56;
 
+// @see https://zellwk.com/blog/rem-vs-em/
+// Instead of using `em` or `rem`, we will use this property to compute units for child elements
+$base-root-unit: round($base-font-size * $base-line-height);
+
+// font weight
 $bold: bold;
 $medium: 500;
 $regular: normal;
 $semibold: 600;
 $extrabold: 800;
 $black: 900;
-// Fonts
 
-$base-font-family-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+// Fonts
+$base-font-family-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $base-font-family-default: $font-name, $base-font-family-fallback;
 
-$title-font-family-fallback: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+$title-font-family-fallback: "Merriweather", Georgia, "Times New Roman", Times,
+  serif;
 $title-font-family: $title-font-name, $title-font-family-fallback;
