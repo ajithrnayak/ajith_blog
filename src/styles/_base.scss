@@ -170,6 +170,13 @@ figcaption {
   padding-right: 14px !important;
 }
 
+svg {
+  width: 100%;
+  height: 100%;
+  fill: $color-primary;
+  vertical-align: middle;
+}
+
 // Responsive Images
 // ---------------
 embed,
