@@ -1,5 +1,6 @@
 @import "mixins/scrollbars";
 @import "theme";
+@import "mixins/rhythm";
 
 /** 
  * html elements
@@ -17,13 +18,156 @@ html {
   }
 }
 
-div,
-section,
-span,
-svg,
-a,
-li {
-  margin-top: 0;
+body {
+  @include color-assign(background-color, background);
+  @include color-assign(color, text_color);
+  font-family: $base-font-family-default;
+  line-height: $base-line-height;
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: $color-selection;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: $bold;
+}
+
+h1 {
+  font-size: $base-font-size * 2.5;
+  @include line-height(2);
+  @include margin-top(4);
+  @include margin-bottom(1);
+}
+
+h2 {
+  font-size: $base-font-size * 1.6875;
+  @include line-height(1.5);
+  @include margin-top(2);
+  @include margin-bottom(0.5);
+}
+
+h3 {
+  font-size: $base-font-size * 1.375;
+  @include line-height(1);
+  @include margin-top(2);
+  @include margin-bottom(0.5);
+}
+
+h4 {
+  font-size: $base-font-size * 1.2;
+  @include line-height(1);
+  @include margin-top(1.5);
+  @include margin-bottom(0.5);
+}
+
+h5 {
+  font-size: $base-font-size;
+  @include line-height(1);
+  @include margin-top(2.5);
+  @include margin-bottom(0.5);
+}
+
+h6 {
+  font-size: $base-font-size;
+  @include line-height(1);
+  @include margin-top(2.5);
+  @include margin-bottom(0.5);
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+  margin: inherit auto;
+}
+
+hr {
+  background-color: $color-secondary;
+  height: 1px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  margin: 1rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+  }
+}
+
+b,
+strong {
+  font-weight: $bold;
+}
+
+ul {
+  list-style: square;
+  @include margin-bottom(1);
+
+  & li {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+}
+
+p {
+  @include line-height(1);
+  margin-bottom: 1em;
+}
+
+blockquote {
+  border-left-color: $color-primary;
+  border-left-style: solid;
+  border-left-width: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1.5rem;
+}
+
+figure {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  @include line-height(0.75);
+  @include margin-top(0.25);
+  font-size: $small-font-size;
+  font-style: italic;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.anchor {
+  margin-left: -30px !important;
+  padding-right: 14px !important;
 }
 
 // Responsive Images
@@ -47,20 +191,6 @@ table {
   table-layout: fixed;
 }
 
-// Figure intrinsic sizing
-// ---------------
-figure {
-  max-width: max-content;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-
-  > img {
-    display: block;
-    height: auto;
-  }
-}
-
 // Scrollbars
 // ---------------
 body {
@@ -79,39 +209,3 @@ body {
   );
 }
 */
-
-body {
-  @include color-assign(background-color, background);
-  @include color-assign(color, text_color);
-  font-family: $base-font-family-default;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-p {
-  line-height: $base-line-height;
-  margin-bottom: 1em;
-}
-
-b,
-strong {
-  font-weight: $bold;
-}
-
-ul {
-  list-style: square;
-  margin-bottom: 1em;
-
-  & li {
-    padding: 0 5px;
-    margin-bottom: 10px;
-  }
-}
-
-.anchor {
-  margin-left: -30px !important;
-  padding-right: 14px !important;
-}

@@ -1,0 +1,14 @@
+
+/** Line-Height */
+ @mixin line-height($number) {
+  line-height: #{ $number * $base-root-unit + "px"};
+}
+
+/** Margin */
+ @mixin margin-top($number) {
+  margin-top: #{ $number * $base-root-unit + "px"};
+}
+
+@mixin margin-bottom($number) {
+  margin-bottom: #{ $number * $base-root-unit + "px"};
+}
