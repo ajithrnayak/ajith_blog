@@ -1,6 +1,7 @@
 @import "mixins/scrollbars";
 @import "theme";
 @import "mixins/rhythm";
+@import "mixins/breakpoints";
 
 /** 
  * html elements
@@ -125,19 +126,26 @@ strong {
   font-weight: $bold;
 }
 
-ul {
-  list-style: square;
+ul, ol {
   @include margin-bottom(1);
 
   & li {
     padding: 0 5px;
-    margin-bottom: 10px;
+    @include margin-bottom(1);
+
+    p {
+      margin-bottom: 0;
+    }
   }
+}
+
+ul {
+  list-style: square;
 }
 
 p {
   @include line-height(1);
-  @include margin-bottom(1);
+  @include margin-bottom(0.5);
 }
 
 blockquote {
@@ -176,6 +184,12 @@ svg {
   vertical-align: middle;
 }
 
+// Scrollbars
+// ---------------
+body {
+  @include scrollbars(4px, $color-primary);
+}
+
 // Responsive Images
 // ---------------
 embed,
@@ -192,13 +206,31 @@ textarea {
 
 // Table layouts
 // ---------------
-table {
+table, th, td {
   width: 100%;
   table-layout: fixed;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  @include color-assign(border-color, text_color);
 }
 
-// Scrollbars
+table, th, td {
+  @include breakpoint-sm {
+    font-size: $base-font-size * 0.75;
+  }
+}
+
+// PrismJS
 // ---------------
-body {
-  @include scrollbars(4px, $color-primary);
+.gatsby-highlight {
+  overflow: auto;
+  & pre {
+    word-wrap: break-word;
+  }
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  overflow: initial;
 }
