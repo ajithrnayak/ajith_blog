@@ -1,5 +1,6 @@
 @import "../../styles/theme";
 @import "../../styles/mixins/rhythm";
+@import "../../styles/mixins/breakpoints";
 
 footer {
   position: relative;
@@ -12,6 +13,10 @@ footer {
   width: inherit;
   max-width: inherit;
   @include margin-bottom(1);
+
+  @include breakpoint-sm {
+    display: block;
+  }
 }
 
 .copyright {

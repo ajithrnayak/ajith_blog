@@ -1,5 +1,6 @@
 @import "../../styles/theme";
 @import "../../styles/mixins/rhythm";
+@import "../../styles/mixins/breakpoints";
 
 .post_meta {
   max-width: inherit;
@@ -23,5 +24,9 @@
 
   p {
     margin-bottom: 0;
+  }
+
+  @include breakpoint-sm {
+    display: block;
   }
 }
