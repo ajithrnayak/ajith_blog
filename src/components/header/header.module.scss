@@ -4,7 +4,7 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: inherit;
   @include margin-top(1.8);
   @include margin-bottom(2.5);
