@@ -540,7 +540,7 @@ Design is pivotal.
 
     Nothing more to explain about this dude; [check this out](https://twitter.com/hashtag/clarkfrominvision?src=hash).
 
-##Talks, Screencasts &amp; Videos \*_searches around for lost left ear's Airpod_ 🙉.
+##Talks, Screencasts &amp; Videos
 
 1. **WWDC**— [https://developer.apple.com/videos/wwdc2016/](https://developer.apple.com/videos/wwdc2016/)
 
