@@ -16,7 +16,7 @@ const TitleAndCaption = ({ data }) => {
         <p>
           {subtitle}
           <span className={styles.website}>
-            Checkout my <a href={website}>website.</a>
+            Checkout my <a href={website} target="_blank" rel="noopener noreferrer">website.</a>
           </span>
         </p>
       </div>
