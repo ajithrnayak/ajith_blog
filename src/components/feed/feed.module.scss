@@ -24,6 +24,7 @@
 
 .post_title_link {
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   color: inherit;
   &:hover,
   &:focus {
