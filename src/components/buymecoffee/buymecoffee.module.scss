@@ -4,9 +4,10 @@
   max-width: inherit;
   width: 100%;
   @include margin-bottom(1);
-  & img {
-    height: "51";
-    width: "217";
+  
+  img {
+    height: 51px;
+    width: 217px;
   }
 }
 
