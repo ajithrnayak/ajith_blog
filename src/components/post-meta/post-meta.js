@@ -6,7 +6,7 @@ const PostMeta = ({ frontmatter, timeToRead }) => {
   const { date, tag } = frontmatter
 
   return (
-    <div className={styles.post_meta}>
+    <header className={styles.post_meta}>
       <h1 className={styles.post_title}>{title}</h1>
       <div className={styles.post_caption}>
               <p>
@@ -14,7 +14,7 @@ const PostMeta = ({ frontmatter, timeToRead }) => {
               </p>
               <p>{timeToRead} min read</p>
             </div>
-    </div>
+    </header>
   )
 }
 

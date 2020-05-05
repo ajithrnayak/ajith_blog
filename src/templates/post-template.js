@@ -22,8 +22,10 @@ const PostTemplate = ({ data, pageContext }) => {
         pathname={frontmatter.path}
         article={true}
       />
+      <article>
       <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
       <PostContent markdownRemark={markdownRemark} />
+      </article>
       <BuyMeCoffee />
       <Pagination previous={previous} next={next} />
     </Layout>

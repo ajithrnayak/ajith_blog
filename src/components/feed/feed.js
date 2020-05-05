@@ -8,8 +8,8 @@ const Feed = ({ posts }) => {
       {posts.map(post => {
         const { frontmatter } = post.node
         return (
-          <div className={styles.feed_item} key={frontmatter.path}>
-            <div className={styles.feed_item_header}>
+          <article className={styles.feed_item} key={frontmatter.path}>
+            <header className={styles.feed_item_header}>
               <h2 className={styles.post_title}>
                 <Link className={styles.post_title_link} to={frontmatter.path}>
                   {frontmatter.title}
@@ -20,9 +20,11 @@ const Feed = ({ posts }) => {
                   <time>{frontmatter.date}</time> {` – `} {frontmatter.tag}
                 </p>
               </div>
-            </div>
-            <p className={styles.post_excerpt}>{frontmatter.excerpt}</p>
-          </div>
+            </header>
+            <section>
+              <p className={styles.post_excerpt}>{frontmatter.excerpt}</p>
+            </section>
+          </article>
         )
       })}
     </div>

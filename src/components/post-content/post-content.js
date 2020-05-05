@@ -5,7 +5,7 @@ const PostContent = ({ markdownRemark }) => {
   const html = markdownRemark.html
 
   return (
-    <div
+    <section
       className={styles.post_content}
       dangerouslySetInnerHTML={{ __html: html }}
     />
