@@ -2,7 +2,7 @@
 @import "../../styles/mixins/rhythm";
 
 .pagination_container {
-  @include margin-bottom(1);
+  @include margin-bottom(1.5);
 }
 
 .pagination {
