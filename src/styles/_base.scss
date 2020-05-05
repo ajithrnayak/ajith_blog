@@ -227,15 +227,10 @@ td {
   }
 }
 
-// PrismJS
+// Image Wrapper
 // ---------------
-.gatsby-highlight {
-  overflow: auto;
-  & pre {
-    word-wrap: break-word;
+#gatsby-focus-wrapper {
+  .gatsby-resp-image-wrapper {
+    max-width: 100% !important;
   }
-}
-
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  overflow: initial;
 }
