@@ -1,15 +1,18 @@
 @import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
 
 .post_meta {
   max-width: inherit;
   width: inherit;
-  margin-bottom: 2em;
+  @include margin-bottom(2.5);
 }
 
 .post_title {
   font-family: inherit;
   font-weight: $medium;
-  font-size: 2.6em;
+  font-size: $base-font-size * 2.5;
+  @include line-height(2.5);
+  @include margin-top(0);
 }
 
 .post_caption {
@@ -17,4 +20,8 @@
   flex-direction: row;
   justify-content: space-between;
   color: $color-text-caption;
+
+  p {
+    margin-bottom: 0;
+  }
 }

@@ -9,10 +9,9 @@ footer {
   align-items: top;
   border-top: 2px solid $color-secondary;
   bottom: 0;
-  height: 100px;
   width: inherit;
   max-width: inherit;
-  @include margin-bottom(2.5714);
+  @include margin-bottom(1);
 }
 
 .copyright {

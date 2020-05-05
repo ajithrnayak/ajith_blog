@@ -1,7 +1,8 @@
 @import "../../styles/theme";
+@import "../../styles/mixins/rhythm";
 
 .pagination_container {
-  margin-top: 4.5em;
+  @include margin-bottom(1);
 }
 
 .pagination {
@@ -10,6 +11,10 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
+
+  & p {
+    @include margin-bottom(0.3);
+  }
 }
 
 .previous {
