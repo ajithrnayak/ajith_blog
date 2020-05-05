@@ -126,7 +126,8 @@ strong {
   font-weight: $bold;
 }
 
-ul, ol {
+ul,
+ol {
   @include margin-bottom(1);
 
   & li {
@@ -206,7 +207,9 @@ textarea {
 
 // Table layouts
 // ---------------
-table, th, td {
+table,
+th,
+td {
   width: 100%;
   table-layout: fixed;
   padding: 10px;
@@ -216,7 +219,9 @@ table, th, td {
   @include color-assign(border-color, text_color);
 }
 
-table, th, td {
+table,
+th,
+td {
   @include breakpoint-sm {
     font-size: $base-font-size * 0.75;
   }
