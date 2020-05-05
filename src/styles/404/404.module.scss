@@ -1,17 +1,20 @@
 @import "../../styles/theme";
 
+/**
+  position: fixed;
+  left: 50vh;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+*/
+
 .not_found {
-  margin: 0 auto;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 150px auto 0;
+
 
   &  h1 {
     margin: 0 auto;
-    height: inherit;
+    text-align: center;
     font-size: 150px;
-    overflow: hidden;
     text-shadow: 0px 0px 3px #202020, 5px 5px 2px $color-primary,
       -5px -2px 2px mix(black, red, 50);
     font-weight: $black;

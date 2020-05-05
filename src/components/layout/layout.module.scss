@@ -13,3 +13,8 @@
   @include padding-left(1);
   @include padding-right(1);
 }
+
+main {
+  min-width: inherit;
+  min-height: calc(100vh - 200px);
+}
