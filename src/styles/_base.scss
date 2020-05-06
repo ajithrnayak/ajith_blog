@@ -21,7 +21,7 @@ html {
 
 body {
   @include color-assign(background-color, background);
-  @include color-assign(color, text_color);
+  @include color-assign(color, text);
   font-family: $base-font-family-default;
   line-height: $base-line-height;
   min-height: 100%;

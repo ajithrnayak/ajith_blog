@@ -5,11 +5,11 @@
 $theme: (
   light: (
     background: $color-background-light,
-    text_color: $color-text-light,
+    text: $color-text-light,
   ),
   dark: (
     background: $color-background-dark,
-    text_color: $color-text-dark,
+    text: $color-text-dark,
   ),
 );
 
@@ -17,19 +17,21 @@ $theme: (
   @return "--color-#{$color-key}";
 }
 
+// Apply light theme as default there
 :root {
   @each $key, $value in map-get($theme, "light") {
     #{compose-color-variable($key)}: #{$value};
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    @each $key, $value in map-get($theme, "dark") {
-      #{compose-color-variable($key)}: #{$value};
-    }
-  }
-}
+// Switch to dark mode if system preference is dark mode
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     @each $key, $value in map-get($theme, "dark") {
+//       #{compose-color-variable($key)}: #{$value};
+//     }
+//   }
+// }
 
 @function str-replace($string, $search, $replace: "") {
   $index: str-index($string, $search);
