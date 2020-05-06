@@ -1,13 +1,15 @@
-
 /* Pacifico
 -------------
 Generated using https://www.fontsquirrel.com */
 
 @font-face {
-  font-family: 'Pacifico';
-  src: url('../../static/fonts/Pacifico/pacifico-regular-webfont.woff2') format('woff2'),
-       url('../../static/fonts/Pacifico/pacifico-regular-webfont.woff') format('woff'),
-       url('../../static/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+  font-family: "Pacifico";
+  src: url("../../static/fonts/Pacifico/Pacifico-Regular.ttf")
+      format("truetype"),
+    url("../../static/fonts/Pacifico/pacifico-regular-webfont.woff2")
+      format("woff2"),
+    url("../../static/fonts/Pacifico/pacifico-regular-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,57 +18,62 @@ Generated using https://www.fontsquirrel.com */
 -------------- 
 Generated using http://transfonter.org/ */
 
+// IMPORTANT NOTE: Ensure `ttf` format is listed first in `src` since font generator has messed up letter 'A' in other formats.
+
 @font-face {
-  font-family: 'Maven Pro';
-  src: url('../../static/fonts/Maven_Pro/MavenPro-Bold.woff2') format('woff2'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Bold.woff') format('woff'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Bold.ttf') format('truetype');
+  font-family: "Maven Pro";
+  src: url("../../static/fonts/Maven_Pro/MavenPro-Bold.ttf") format("truetype"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Bold.woff2") format("woff2"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Maven Pro';
-  src: url('../../static/fonts/Maven_Pro/MavenPro-Medium.woff2') format('woff2'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Medium.woff') format('woff'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Medium.woff') format('truetype');
+  font-family: "Maven Pro";
+  src: url("../../static/fonts/Maven_Pro/MavenPro-Medium.ttf")
+      format("truetype"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Medium.woff2") format("woff2"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Maven Pro';
-  src: url('../../static/fonts/Maven_Pro/MavenPro-Regular.woff2') format('woff2'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Regular.woff') format('woff'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Regular.woff') format('truetype');
+  font-family: "Maven Pro";
+  src: url("../../static/fonts/Maven_Pro/MavenPro-Regular.ttf")
+      format("truetype"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Regular.woff2") format("woff2"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Maven Pro';
-  src: url('../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff2') format('woff2'),
-      url('../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff') format('woff'),
-      url('../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff') format('truetype');
+  font-family: "Maven Pro";
+  src: url("../../static/fonts/Maven_Pro/MavenPro-ExtraBold.ttf")
+      format("truetype"),
+    url("../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff2") format("woff2"),
+    url("../../static/fonts/Maven_Pro/MavenPro-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Maven Pro';
-  src: url('../../static/fonts/Maven_Pro/MavenPro-Black.woff2') format('woff2'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Black.woff') format('woff'),
-      url('../../static/fonts/Maven_Pro/MavenPro-Black.woff') format('truetype');
+  font-family: "Maven Pro";
+  src: url("../../static/fonts/Maven_Pro/MavenPro-Black.ttf") format("truetype")
+      url("../../static/fonts/Maven_Pro/MavenPro-Black.woff2") format("woff2"),
+    url("../../static/fonts/Maven_Pro/MavenPro-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Maven Pro';
-  src: url('../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff2') format('woff2'),
-      url('../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff') format('woff'),
-      url('../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff') format('truetype');
+  font-family: "Maven Pro";
+  src: url("../../static/fonts/Maven_Pro/MavenPro-SemiBold.ttf")
+      format("truetype"),
+    url("../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff2") format("woff2"),
+    url("../../static/fonts/Maven_Pro/MavenPro-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
-
