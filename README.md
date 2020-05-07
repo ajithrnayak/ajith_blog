@@ -13,7 +13,11 @@
   </a>
 </p>
 
-![Dribble Shot](https://cdn.dribbble.com/users/749345/screenshots/11326543/media/838a95853723b6c32dcc902d98ff662a.png)
+<p align="center">
+  <a href="https://dribbble.com/shots/11326543-My-Minimalistic-Blog" target="_blank">
+    <img src="https://cdn.dribbble.com/users/749345/screenshots/11326543/media/838a95853723b6c32dcc902d98ff662a.png" alt="Dribble Shot" />
+  </a>
+</p>
 
 ## Design
 + [Dribble Shot](https://dribbble.com/shots/11326543-My-Minimalistic-Blog)
@@ -54,7 +58,7 @@ cd hello-world
 ```sh
 gatsby develop
 ```
-2. View your site locally
+2. View your site locally   
 Open up a new tab in your browser and navigate to http://localhost:8000/
 
 3. Stop the development server (if it’s still running)
@@ -71,7 +75,7 @@ gatsby build
 ```sh
 gatsby serve
 ```
-3. Preview production site locally
+3. Preview production site locally    
 Open up a new tab in your browser and you can view your site at http://localhost:9000
 
 ## License
