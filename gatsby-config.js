@@ -14,6 +14,7 @@ module.exports = {
     title: siteConfig.title,
     description: siteConfig.description,
     subtitle: siteConfig.subtitle,
+    icon: siteConfig.icon,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     author: siteConfig.author,

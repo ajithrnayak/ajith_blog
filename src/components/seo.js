@@ -9,7 +9,7 @@ const SEO = ({ title, description, pathname, image, article }) => {
   const defaultTitle = metadata.title
   const defaultDescription = metadata.description
   const siteUrl = metadata.url
-  const defaultImage = metadata.image
+  const defaultImage = metadata.icon
   const twitterUsername = metadata.twitterUsername
 
   const seo = {
