@@ -16,8 +16,9 @@ const SEO = ({ title, description, pathname, image, article }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    url: `${siteUrl}${pathname || ""}`,
   }
+
   return (
     <Helmet title={seo.title} titleTemplate={`%s | ${metadata.title}`}>
       {/* -- Primary Meta Tags -- */}
