@@ -84,6 +84,7 @@ module.exports = {
       options: {
         name: siteConfig.title,
         short_name: siteConfig.title,
+        lang: "en",
         start_url: "/",
         background_color: "#171A21",
         theme_color: "#70C80F",
