@@ -100,5 +100,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: siteConfig.googleAnalyticsId,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
   ],
 }

@@ -11,7 +11,7 @@ module.exports = {
   icon: "static/images/logo-icon.png",
   disqusShortname: "ajithrnayak",
   postsPerPage: 10,
-  googleAnalyticsId: "UA-43294206-2",
+  googleAnalyticsId: "UA-43294206-3",
   website: "https://ajith.xyz",
   sourceCode: "http://github.com/ajithrnayak/ajith_blog",
   author: {
