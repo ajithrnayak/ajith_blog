@@ -9,17 +9,20 @@ const SEO = ({ title, description, pathname, image, article }) => {
   const defaultTitle = metadata.title
   const defaultDescription = metadata.description
   const siteUrl = metadata.url
-  const defaultImage = metadata.image
+  const defaultImage = metadata.icon
   const twitterUsername = metadata.twitterUsername
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    url: `${siteUrl}${pathname || ""}`,
   }
+
   return (
     <Helmet title={seo.title} titleTemplate={`%s | ${metadata.title}`}>
+      <html lang="en" />
+
       {/* -- Primary Meta Tags -- */}
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

@@ -1,99 +1,102 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's hello-world starter
+    <img alt="Ajith's Blog" title="Ajith's Blog" src="https://github.com/ajithrnayak/ajith_blog/blob/master/static/images/logo-icon.png" width="140"> </br>
+    Ajith's Blog
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<p align="center">
+  A minimalistic blog built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify.</a>
+</p>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<p align="center">
+  <a href="https://app.netlify.com/sites/ajith-blog/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/642e2e03-58b9-4723-b712-b087aaae08ec/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
-## 🚀 Quick start
+<p align="center">
+  <a href="https://dribbble.com/shots/11326543-My-Minimalistic-Blog" target="_blank">
+    <img src="https://cdn.dribbble.com/users/749345/screenshots/11326543/media/838a95853723b6c32dcc902d98ff662a.png" alt="Dribble Shot" />
+  </a>
+</p>
 
-1.  **Create a Gatsby site.**
+## Design
++ [Dribble Shot](https://dribbble.com/shots/11326543-My-Minimalistic-Blog)
++ [Figma File](https://www.figma.com/file/3PXYqQSUKRm9lwQbwxS7Zc/ajith.blog?node-id=0%3A1)
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+## Features
++ Built using Gatsby powered with Graphql
++ Beautiful typography, minimalism and mobile first approach
++ Uses SASS/SCSS modules
++ Dark-mode support
++ Markdown content
++ Syntax highlighting in code blocks using [PrismJS](http://prismjs.com)
++ Custom fonts stored locally
++ [Buy me a coffee](https://www.buymeacoffee.com) support   
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+**TODO**
++ RSS Feed
++ Google Analytics
++ Disqus Comments
 
-1.  **Start developing.**
+## Web Performance Tests
++ Lighthouse Report - [WebPageTest](https://www.webpagetest.org/result/200507_VC_7b51fff63bbc88e5ea41a0ce29c41f0c/)
 
-    Navigate into your new site’s directory and start it up.
+## Set Up
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+1. Install the Gatsby CLI
+```sh
+npm install -g gatsby-cli
+```
+2. Change into the working directory
+```sh
+cd hello-world
+```
 
-1.  **Open the source code and start editing!**
+#### Build for Development
 
-    Your site is now running at `http://localhost:8000`!
+1. Start the development mode:
+```sh
+gatsby develop
+```
+2. View your site locally   
+Open up a new tab in your browser and navigate to http://localhost:8000/
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+3. Stop the development server (if it’s still running)
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Use `CTR+C`
 
-## 🧐 What's inside?
+####  Build for Production
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+1. Start the build process with following command
+```sh
+gatsby build
+```
+2. Publish the production to make it available locally. Run:
+```sh
+gatsby serve
+```
+3. Preview production site locally    
+Open up a new tab in your browser and you can view your site at http://localhost:9000
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## License
+MIT License
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+Copyright (c) 2020 Ajith R Nayak
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

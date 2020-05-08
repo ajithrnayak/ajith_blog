@@ -14,6 +14,7 @@ module.exports = {
     title: siteConfig.title,
     description: siteConfig.description,
     subtitle: siteConfig.subtitle,
+    icon: siteConfig.icon,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     author: siteConfig.author,
@@ -83,20 +84,21 @@ module.exports = {
       options: {
         name: siteConfig.title,
         short_name: siteConfig.title,
+        lang: "en",
         start_url: "/",
         background_color: "#171A21",
         theme_color: "#70C80F",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: siteConfig.image,
+        icon: siteConfig.icon,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     // The offline plugin should be listed after the manifest plugin
     // so that the offline plugin can cache the created manifest.webmanifest.
     `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
   ],
 }

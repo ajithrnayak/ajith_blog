@@ -19,6 +19,7 @@ export const useSiteMetadata = () => {
             title
             description
             subtitle
+            icon
             copyright
             disqusShortname
             website
