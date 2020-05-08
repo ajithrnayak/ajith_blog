@@ -100,6 +100,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-optimize-svgs',
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
