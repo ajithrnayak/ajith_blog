@@ -101,6 +101,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-optimize-svgs',
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
