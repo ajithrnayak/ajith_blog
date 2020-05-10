@@ -20,8 +20,6 @@ html {
 }
 
 body {
-  @include color-assign(background-color, background);
-  @include color-assign(color, text);
   font-family: $base-font-family-default;
   line-height: $base-line-height;
   min-height: 100%;
@@ -213,7 +211,7 @@ td {
   border-width: 1px;
   border-style: solid;
   border-collapse: collapse;
-  @include color-assign(border-color, text_color);
+  border-color: inherit;
 }
 
 table,
