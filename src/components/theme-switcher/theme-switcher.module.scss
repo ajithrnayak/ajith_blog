@@ -1,6 +1,6 @@
 @import "../../styles/theme";
 
-.toggle_button {
+@mixin toggle_button {
   opacity: 0.65;
   position: relative;
   border-radius: 5px;
@@ -25,6 +25,7 @@
 }
 
 .moon {
+  @include toggle_button;
   position: relative;
   width: 24px;
   height: 24px;
@@ -69,6 +70,7 @@
 }
 
 .sun {
+  @include toggle_button;
   position: relative;
   width: 24px;
   height: 24px;
