@@ -5,7 +5,7 @@ draft: false
 path: "/undo-xcode-skip-bundles"
 category: "iOS Development"
 tag: "iOS Development"
-excerpt: "As a full-time iOS developer, everyday I’ll be paddling towards that tight project deadline against the high winds. And, I seldom have time to stay in touch with latest trends, announcements, innovations, articles and open source inspirations surrounding iOS development. It’s difficult to stay on top of my iOS game. Can you relate?"
+excerpt: "Xcode [on re-launch] shows a "unexpected code bundles" alert when a new plug-in is identified. This way, Apple informs the user that it is not responsible for the negative effects of these third party bundles. Well, I skipped the bundles accidentally."
 ---
 
 Howdy! Here’s a quick share.
