@@ -593,3 +593,6 @@ Humor Me 😆.
 .
 
 🎤👋
+
+<br/><br/>
+This post was originally [published](https://medium.com/@ajithrnayak/stayin-on-top-of-your-game-ios-newsletters-blogs-developers-companies-to-follow-527b859b3bb5) on Medium.
