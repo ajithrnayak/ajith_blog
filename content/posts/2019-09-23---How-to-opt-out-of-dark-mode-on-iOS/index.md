@@ -56,6 +56,6 @@ window.overrideUserInterfaceStyle = .light
 > Note: Apple strongly encourages to support dark mode in your app. So,
 > you can only disable dark mode temporarily.
 
-Read more from Apple's documentation here: [Choosing a Specific Interface Style for Your iOS App](https://developer.apple.com/documentation/appkit/supporting_dark_mode_in_your_interface/choosing_a_specific_interface_style_for_your_ios_app)
-
-This post was originally written as answer to Stackoverflow [question](https://stackoverflow.com/a/58062075/1835803).
+Read more from Apple's documentation here: [Choosing a Specific Interface Style for Your iOS App](https://developer.apple.com/documentation/appkit/supporting_dark_mode_in_your_interface/choosing_a_specific_interface_style_for_your_ios_app) 
+<br/><br/>
+This post was originally written as answer to a Stackoverflow [question](https://stackoverflow.com/a/58062075/1835803).
