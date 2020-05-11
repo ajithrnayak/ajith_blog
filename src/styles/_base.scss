@@ -78,14 +78,14 @@ h4 {
 h5 {
   font-size: $base-font-size;
   @include line-height(1);
-  @include margin-top(2.5);
+  @include margin-top(1.5);
   @include margin-bottom(0.5);
 }
 
 h6 {
   font-size: $base-font-size;
   @include line-height(1);
-  @include margin-top(2.5);
+  @include margin-top(1.5);
   @include margin-bottom(0.5);
 }
 
@@ -154,6 +154,8 @@ blockquote {
   margin-left: 0px;
   margin-right: 0px;
   @include padding-left(1.5);
+  @include margin-top(1.5);
+  @include margin-bottom(1);
 }
 
 figure {
