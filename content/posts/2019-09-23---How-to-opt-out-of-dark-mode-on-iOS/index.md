@@ -1,5 +1,5 @@
 ---
-title: How to opt-out of dark mode on iOS
+title: "How to opt-out of dark mode on iOS"
 date: "2019-09-23T00:00:00.000Z"
 draft: false
 path: "/how-to-opt-out-of-dark-mode-on-iOS"

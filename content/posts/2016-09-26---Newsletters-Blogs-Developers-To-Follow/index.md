@@ -1,5 +1,5 @@
 ---
-title: Newsletters, Blogs & Developers To Follow For iOS Developers
+title: "Newsletters, blogs & developers to follow for iOS developers"
 date: "2016-09-26T00:00:00.000Z"
 draft: false
 path: "/newsletters-blogs-developers-to-follow"

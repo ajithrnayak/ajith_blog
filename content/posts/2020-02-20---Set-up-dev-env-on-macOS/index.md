@@ -1,5 +1,5 @@
 ---
-title: How to setup my mac for development
+title: "How to setup my mac for development"
 date: "2020-02-20T00:00:00.000Z"
 draft: false
 path: "/set-up-dev-env-on-macOS"
