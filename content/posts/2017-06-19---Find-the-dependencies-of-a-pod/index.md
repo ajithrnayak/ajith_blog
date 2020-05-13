@@ -3,7 +3,7 @@ title: "Cocoapods: Find the dependencies of a Pod"
 date: "2017-06-19T00:00:00.000Z"
 draft: false
 path: "/find-the-dependencies-of-a-pod"
-category: "iOS Development"
+category: "iOS"
 tag: "iOS Development"
 excerpt: "Xcode throws errors from a pod dependency and that particular pod isn't mentioned anywhere in your Podfile? Here's how you can find out which of your project's pod is using this erroneous pod."
 ---

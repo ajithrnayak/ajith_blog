@@ -3,7 +3,7 @@ title: "How to setup my mac for development"
 date: "2020-02-20T00:00:00.000Z"
 draft: false
 path: "/set-up-dev-env-on-macOS"
-category: "iOS Development"
+category: "Guide"
 tag: "Developer Guide"
 excerpt: "I got a new Macbook and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development."
 ---

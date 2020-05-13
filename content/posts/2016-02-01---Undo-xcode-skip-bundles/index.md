@@ -3,7 +3,7 @@ title: "Undo Xcode skip bundles"
 date: "2016-02-01T00:00:00.000Z"
 draft: false
 path: "/undo-xcode-skip-bundles"
-category: "iOS Development"
+category: "iOS"
 tag: "iOS Development"
 excerpt: "Xcode [on re-launch] shows a 'unexpected code bundles' alert when a new plug-in is identified. This way, Apple informs the user that it is not responsible for the negative effects of these third party bundles. Well, I skipped the bundles accidentally."
 ---
