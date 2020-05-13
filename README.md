@@ -32,10 +32,10 @@
 + Syntax highlighting in code blocks using [PrismJS](http://prismjs.com)
 + Custom fonts stored locally
 + [Buy me a coffee](https://www.buymeacoffee.com) support   
++ Google Analytics
 
 **TODO**
 + RSS Feed
-+ Google Analytics
 + Disqus Comments
 
 ## Web Performance Tests
