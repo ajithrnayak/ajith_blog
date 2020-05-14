@@ -73,10 +73,8 @@ A status bar always extends to full width of the device. However, since the intr
 
 _Note_: Don't replace systemwide status bar with a custom one.
 
-Available styles:
-
+Available styles:  
 - Light (black icons on a white background)
-
 - Dark (white icons on a black background)
 
 | Device            | Status Bar Height |
@@ -119,10 +117,7 @@ A tab bar is another type of approach to navigation inside the app.
 
 _Note_: Use Tab Bars strictly for navigation purpose only. Check Toolbars for other purposes.
 
-After Apple removed the physical home button and introduced a home indicator bar at the bottom, consider home indicator height in your designs.
-
-![tabbar](/Users/Ajith/Desktop/tabbar.png)
-
+After Apple removed the physical home button and introduced a home indicator bar at the bottom, consider home indicator height in your designs.  
 However, as a developer, you might want to read about Safe Area in Autolayout to avoid overlapping of home indicator over your app's content.
 
 | Tab Bar Type                                  | Height      |
@@ -135,7 +130,7 @@ However, as a developer, you might want to read about Safe Area in Autolayout to
 
 With iOS 13, Apple released [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) to match the new San Francisco system font. If you need a symbol that isn't provided by SF Symbols, you can create your own.
 
-![sf-symbols-scales-weights](../../../../Desktop/sf-symbols-scales-weights.png)
+![sf-symbols-scales-weights](./sf-symbols-scales-weights.png)
 
 ###### Icon Sizes
 
@@ -169,9 +164,6 @@ With iOS 13, Apple released [SF Symbols](https://developer.apple.com/design/huma
 I've managed to put this together for personal use as per my need using following useful links:
 
 - [Kapeli.com](https://kapeli.com/cheat_sheets/iOS_Design.docset/Contents/Resources/Documents/index)
-
 - [ivomynttinen.com](https://ivomynttinen.com/blog/ios-design-guidelines)
-
 - [Apple Design Resources](https://developer.apple.com/design/resources/)
-
 - [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
