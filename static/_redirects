@@ -1,4 +1,4 @@
-/home                                                                 /                                             301
+/home                                                                 /                                             200
 /post/95441624221/xcode-users-can-free-up-space-on-your-mac           /xcode-users-can-free-up-space-on-your-mac    301
 /post/138604755291/state-restoration-in-ios-app                       /                                             301
 /post/87412123846/core-data-vs-couchbase-lite                         /core-data-vs-couchbase                       301
@@ -8,4 +8,5 @@
 /post/83390878508/zombies-of-cocoa-world                              /zombies-of-cocoa-world                       301
 /post/106819544471/how-i-interview                                    /how-i-interview                              301
 /post/62802922744/grid-view-of-recently-run-apps-on-your-dock         /                                             301
-https://ajith-blog.netlify.app/*									                    https://www.ajith.blog/:splat 				301!
+https://ajith-blog.netlify.app/*									                    https://www.ajith.blog/:splat 				        200!
+https://ajithrnayak.com/*									                            https://www.ajith.blog/:splat 				        200!
