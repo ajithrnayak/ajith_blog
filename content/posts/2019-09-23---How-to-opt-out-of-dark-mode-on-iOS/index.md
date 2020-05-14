@@ -8,10 +8,8 @@ tag: "iOS Development"
 excerpt: "Here's how you can opt-out of Apple's new dark interface style on iOS. You can either opt-out of dark mode entirely or choose specific views, view controllers, or window."
 ---
 
-If you are not using Xcode 11 or later (i,e iOS 13 or later SDK), your app has not automatically opted to support dark mode. So, there's no need to opt out of dark mode.
-
-If you are using Xcode 11 or later, the system has automatically enabled dark mode for your app.
-
+If you are not using Xcode 11 or later (i,e iOS 13 or later SDK), your app has not automatically opted to support dark mode. So, there's no need to opt out of dark mode.  
+If you are using Xcode 11 or later, the system has automatically enabled dark mode for your app.  
 There are two approaches to disable dark mode depending on your preference. You can disable it entirely or disable it for any specific window, view, or view controller.
 
 #### Disable Dark Mode Entirely for your App

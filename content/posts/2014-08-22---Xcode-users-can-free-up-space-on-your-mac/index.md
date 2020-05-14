@@ -37,8 +37,7 @@ $ du -h -d 1 ~/Library/Developer/Xcode
  32G	Library/Developer/Xcode
 ```
 
-Ready?
-
+Ready?  
 Here are some directory paths on your Mac allowing you to free up disk space by deleting its contents.
 
 #### Derived data
@@ -77,7 +76,7 @@ Same goes for watchOS Device. You can remove versions of the device that you no 
 
 The Core Simulator folder is familiar to many Xcode users. It's the territory of the simulator; that where it stores app data. It's obvious that you can delete any older version of the simulator folder(s) if you no longer support your applications for those versions.
 
-There's a command to magically remove all the simulators that Xcode no longer need.
+There's a command to magically remove all the simulators that Xcode no longer requires.
 
 ```sh
 xcrun simctl delete unavailable
