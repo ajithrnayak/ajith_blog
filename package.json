@@ -19,6 +19,7 @@
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^2.4.3",
+    "gatsby-plugin-netlify": "^2.3.2",
     "gatsby-plugin-offline": "^3.2.2",
     "gatsby-plugin-optimize-svgs": "^1.0.4",
     "gatsby-plugin-react-helmet": "^3.3.1",

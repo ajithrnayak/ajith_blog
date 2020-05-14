@@ -102,6 +102,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-dark-mode',
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
