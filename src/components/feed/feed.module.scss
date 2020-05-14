@@ -35,6 +35,10 @@
 .post_meta {
   color: $color-secondary;
   margin-top: 0;
+
+  p {
+    @include margin-bottom(0.5714);
+  }
 }
 
 .post_excerpt {
