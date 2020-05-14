@@ -8,15 +8,38 @@ tag: "Developer Guide"
 excerpt: "Running out of storage space on your Mac? Are you using Xcode IDE? Note the remaining storage space and try the following steps. You're in for a treat."
 ---
 
-Updated for Xcode version 14.1 on May 14, 2020 (original post was for Xcode 5).
+**Updated for Xcode version 14.1 on May 14, 2020 (original post was for Xcode 5).**
 
 First of all, this post is strictly for the Apple developers using Xcode. If you're not, there's a lot of google pointers to reclaim space on your Mac. Or, try the **Manage** option in the storage section.
 
 ![manage storage](./storage.png)
 
-Let's start by taking a note of the remaining storage space inorder to find out how much space we manage to get back. Ready?
+Apple developers, let's start by taking a note of the remaining storage space inorder to find out how much space we manage to get back.
 
-Here are some directory paths that allow you to free up disk space by deleting subdirectories on your Mac.
+```sh
+$ df -h /
+
+Filesystem     Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1s5  465Gi   10Gi  152Gi     7%  487827 4876641413    0%   /
+
+# We are mainly interested in Xcode directory, you can try any directory path.
+$ du -h -d 1 ~/Library/Developer/Xcode
+
+ 47M	Library/Developer/Xcode/iOS Device Logs
+ 11M	Library/Developer/Xcode/Products
+  0B	Library/Developer/Xcode/DocumentationCache
+9.7G	Library/Developer/Xcode/iOS DeviceSupport
+ 17G	Library/Developer/Xcode/Archives
+416K	Library/Developer/Xcode/Templates
+4.3G	Library/Developer/Xcode/watchOS DeviceSupport
+1.3G	Library/Developer/Xcode/UserData
+8.0K	Library/Developer/Xcode/DerivedData
+ 32G	Library/Developer/Xcode
+```
+
+Ready?
+
+Here are some directory paths on your Mac allowing you to free up disk space by deleting its contents.
 
 #### Derived data
 
@@ -40,11 +63,17 @@ iOS Device Support folder creates a subfolder with the device version as identif
 
 If you still have a device running an older version, the directory will be re-created by Xcode when you attach the device. And, no, it has nothing to do with the simulator.
 
-> Caution: You'll want to be careful when removing files from within `/Library` and `/Users/<yourname>/Library` as deleting the wrong files may cause applications and even the OS to misbehave.
+> **~/Library/Developer/Xcode/watchOS DeviceSupport**
+
+Same goes for watchOS Device. You can remove versions of the device that you no longer use. When you connect the device again, Xcode will reload the data.
 
 ![pun husky](./pun-dog.jpg)
 
+> Caution: You'll want to be careful when removing files from within `/Library` and `/Users/<yourname>/Library` as deleting the wrong files may cause applications and even the OS to misbehave.
+
 #### CoreSimulator
+
+> **~/Library/Developer/CoreSimulator**
 
 The Core Simulator folder is familiar to many Xcode users. It's the territory of the simulator; that where it stores app data. It's obvious that you can delete any older version of the simulator folder(s) if you no longer support your applications for those versions.
 
@@ -56,7 +85,7 @@ xcrun simctl delete unavailable
 
 And it's safer to use **Reset Content and Settings** from the menu to delete all of your app data from the simulators you're currently using.
 
-> **Below iOS 6**: As we know, the location of the simulator has been moved from `~/Library/Application Support/iPhone Simulator` since the Xcode 6. So, if you haven't cleared this directory, check it out.
+> **Below iOS 6**: As we know, the location of the simulator has been moved from _~/Library/Application Support/iPhone Simulator_ since the Xcode 6. So, if you haven't cleared this directory, check it out.
 
 #### Caches
 
