@@ -10,8 +10,7 @@ excerpt: "I got a new Macbook and I'm about to set it up for work. As developers
 
 I got a new Macbook and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development.
 
-Currnet version:
-
+Currnet version:  
 macOS catalina 10.15.3
 
 #### Know your home folder
@@ -34,8 +33,7 @@ $ echo $SHELL
 
 #### Install Xcode
 
-As an iOS developer, Xcode is pretty much everything I need.
-
+As an iOS developer, Xcode is pretty much everything I need.  
 Download Xcode from here [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/) or the Apple App Store.
 
 #### Install Xcode Command Line Tools
@@ -130,7 +128,6 @@ brew install fastlane
 #### Install nvm
 
 For nodejs development, open [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm) and to install,
-
 you may either download and run the script manually, or use the following cURL or Wget command:
 
 ```bash
@@ -165,8 +162,7 @@ To confirm that this worked, you can run `npm --version` and `node --version`.
 
 #### Install Sourcetree
 
-A free Git client for Mac and the one I'm very familiar with.
-
+A free Git client for Mac and the one I'm very familiar with.  
 Either download from official website https://www.sourcetreeapp.com or from Mac Appstore.
 
 That will do for now to set up my development environment on a macOS.
