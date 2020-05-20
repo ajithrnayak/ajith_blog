@@ -14,7 +14,7 @@ module.exports = {
     title: siteConfig.title,
     description: siteConfig.description,
     subtitle: siteConfig.subtitle,
-    icon: siteConfig.icon,
+    icon: siteConfig.metaImage,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     author: siteConfig.author,
@@ -98,7 +98,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: siteConfig.icon,
+        icon: siteConfig.favicon,
       },
     },
     // The offline plugin should be listed after the manifest plugin
