@@ -8,7 +8,7 @@ tag: "Developer Guide"
 excerpt: "Running out of storage space on your Mac? Are you using Xcode IDE? Note the remaining storage space and try the following steps. You're in for a treat."
 ---
 
-**Updated for Xcode version 14.1 on May 14, 2020 (original post was for Xcode 5).**
+**Updated for Xcode version 15.0 on Jun 10, 2020 (original post was for Xcode 5).**
 
 First of all, this post is strictly for the Apple developers using Xcode. If you're not, there's a lot of google pointers to reclaim space on your Mac. Or, try the **Manage** option in the storage section.
 
@@ -90,7 +90,11 @@ And it's safer to use **Reset Content and Settings** from the menu to delete all
 
 > **~/Library/Caches/com.apple.dt.Xcode**
 
-Caches are usually safe to delete because they will be recreated as necessary. This isn't a directory, it's an Xcode Project file. Delete away!
+Caches are usually safe to delete because they will be recreated as necessary. This is a directory for the caches to Xcode. Delete away!
+
+> **~/Library/Caches/org.carthage.CarthageKit**
+
+If you've used [Carthage](https://github.com/Carthage/Carthage) to handle dependency, consider checking the storage space it's cache takes up.
 
 #### MobileSync Backup
 
