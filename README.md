@@ -33,10 +33,10 @@
 + Custom fonts stored locally
 + [Buy me a coffee](https://www.buymeacoffee.com) support   
 + Google Analytics
++ Disqus Comments
 
 **TODO**
 + RSS Feed
-+ Disqus Comments
 
 ## Web Performance Tests
 + Lighthouse Report - [WebPageTest](https://www.webpagetest.org/result/200507_VC_7b51fff63bbc88e5ea41a0ce29c41f0c/)
