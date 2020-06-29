@@ -8,7 +8,7 @@ tag: "Developer Guide"
 excerpt: "Running out of storage space on your Mac? Are you using Xcode IDE? Note the remaining storage space and try the following steps. You're in for a treat."
 ---
 
-**Updated for Xcode version 15.0 on Jun 10, 2020 (original post was for Xcode 5).**
+**Updated for Xcode version 11.5 on Jun 10, 2020 (original post was for Xcode 5).**
 
 First of all, this post is strictly for the Apple developers using Xcode. If you're not, there's a lot of google pointers to reclaim space on your Mac. Or, try the **Manage** option in the storage section.
 
@@ -37,7 +37,9 @@ $ du -h -d 1 ~/Library/Developer/Xcode
  32G	Library/Developer/Xcode
 ```
 
+<br/>
 Ready?  
+<br/>
 Here are some directory paths on your Mac allowing you to free up disk space by deleting its contents.
 
 #### Derived data
