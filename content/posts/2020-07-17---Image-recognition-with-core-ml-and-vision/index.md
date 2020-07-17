@@ -48,7 +48,7 @@ enum CoreMLModelFile: String {
 
 ## Create a Vision request using the model
 
-LLet's start by creating a reusable worker class in our project called `VisionMLWorker`. Then, we initialize it with a `CoreMLModelFile` to create a `VNCoreMLModel` which is basically a wrapper provided by Vision framework for CoreML model.
+Let's start by creating a reusable worker class in our project called `VisionMLWorker`. Then, we initialize it with a `CoreMLModelFile` to create a `VNCoreMLModel` which is basically a wrapper provided by Vision framework for CoreML model.
 
 ```swift
 class VisionMLWorker {
