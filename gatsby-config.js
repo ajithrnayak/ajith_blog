@@ -110,6 +110,8 @@ module.exports = {
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-netlify`,
+    `gatsby-link`,
+    `gatsby-react-router-scroll`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
