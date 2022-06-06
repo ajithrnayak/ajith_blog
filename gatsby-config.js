@@ -23,7 +23,17 @@ module.exports = {
     twitterUsername: siteConfig.social.twitter,
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+       cssLoaderOptions: {
+         esModule: false,
+         modules: {
+           namedExport: false,
+         },
+       },
+     },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -110,6 +120,8 @@ module.exports = {
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-netlify`,
+    `gatsby-link`,
+    `gatsby-react-router-scroll`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
