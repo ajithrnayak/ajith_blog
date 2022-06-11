@@ -84,3 +84,56 @@ Generated using http://transfonter.org/ */
   font-style: normal;
   font-display: swap;
 }
+
+
+/* Space Grotesk
+-------------- 
+Generated using http://transfonter.org/ */
+
+// IMPORTANT NOTE: Ensure `ttf` format is listed first in `src` since font generator has messed up letter 'A' in other formats.
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Light.woff2") format('woff2'),
+      url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Regular.woff2") format('woff2'),
+      url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("../../static/fonts/Space_Grotesk/SpaceGrotesk-SemiBold.woff2") format('woff2'),
+      url("../../static/fonts/Space_Grotesk/SpaceGrotesk-SemiBold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Bold.woff2") format('woff2'),
+      url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Medium.woff2") format('woff2'),
+      url("../../static/fonts/Space_Grotesk/SpaceGrotesk-Medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
