@@ -74,7 +74,7 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: "#70C80F" },
+              tracedSVG: { color: "#4E5FFF" },
             },
           },
           {
@@ -103,8 +103,8 @@ module.exports = {
         short_name: siteConfig.title,
         lang: "en",
         start_url: "/",
-        background_color: "#171A21",
-        theme_color: "#70C80F",
+        background_color: "#11151C",
+        theme_color: "#4E5FFF",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",

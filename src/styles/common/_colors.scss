@@ -5,43 +5,43 @@
 // descriptive colors
 // =============
 
-$vantage-green:             #4E5FFF;
-$white-smoke:               #FBFBFB;
-$eerie-black:               #11151C;
-$nickel:                    #617073;
-$white:                     #fff;
-$black:                     #000;
-$silly-blue:                #b3d4fc;
+$vantage-blue: #4E5FFF;
+$white-smoke: #FBFBFB;
+$rich-black: #11151C;
+$nickel: #617073;
+$white: #fff;
+$black: #000;
+$silly-blue: #b3d4fc;
 
 // main color palette
 // =============
-$color-primary:             $vantage-green;
-$color-secondary:           $nickel;
-$color-accent:              $vantage-green;
-$color-shadow:              rgba($black, .125);
+$color-primary: $vantage-blue;
+$color-secondary: $nickel;
+$color-accent: $vantage-blue;
+$color-shadow: rgba($black, .125);
 
 // Common colors
-$color-background-light:      $white-smoke;
-$color-background-dark:       $eerie-black;
-$color-text-light:            $eerie-black;
-$color-text-dark:             $white-smoke;
-$color-text-caption:          $color-secondary;
-$color-underline:             $color-primary;
-$color-text-title:            $color-primary;
+$color-background-light: $white-smoke;
+$color-background-dark: $rich-black;
+$color-text-light: $rich-black;
+$color-text-dark: $white-smoke;
+$color-text-caption: $color-secondary;
+$color-underline: $color-primary;
+$color-text-title: $color-primary;
 // Links
-$color-link:                $color-secondary;
-$color-link-hover:          $color-primary;
-$color-link-visited:        mix($color-primary, white, 50%);
+$color-link: $color-secondary;
+$color-link-hover: $color-primary;
+$color-link-visited: mix($color-primary, white, 50%);
 
 // Selections
-$color-selection:           $silly-blue;
+$color-selection: $silly-blue;
 
 // Messages
-$color-message:             #f4ecbb;
-$color-success:             #2cde2c;
-$color-warning:             #cf8600;
-$color-important:           #d00;
-$color-notice:              #66b;
+$color-message: #f4ecbb;
+$color-success: #2cde2c;
+$color-warning: #cf8600;
+$color-important: #d00;
+$color-notice: #66b;
 
 // Fallback
 $color-fallback: white;
