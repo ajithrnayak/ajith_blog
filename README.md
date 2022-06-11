@@ -81,7 +81,7 @@ Open up a new tab in your browser and you can view your site at http://localhost
 ## License
 MIT License
 
-Copyright (c) 2020 Ajith R Nayak
+Copyright (c) 2020 Ajith Renjala
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -7,7 +7,7 @@ module.exports = {
   description:
     "I build apps and sometimes write about the observations and frustrations at work here.",
   subtitle: "I occasionally blog here.",
-  copyright: "Designed & developed by Ajith R Nayak",
+  copyright: "Designed & developed by Ajith Renjala",
   favicon: "static/images/logo-icon.png",
   metaImage: "images/logo-icon.png",
   disqusShortname: "ajithrnayak",
@@ -16,7 +16,7 @@ module.exports = {
   website: "https://ajith.xyz",
   sourceCode: "http://github.com/ajithrnayak/ajith_blog",
   author: {
-    name: "Ajith R Nayak",
+    name: "Ajith Renjala",
     bio: "Swift/Objective-C developer since iOS 6.",
   },
   social: {
