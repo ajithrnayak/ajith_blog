@@ -12,13 +12,14 @@ I got a new Macbook and I'm about to set it up for work. As developers, we have 
 
 #### What have I got? 
 My employer acknowledged the [productivity boost](https://doordash.engineering/2022/03/01/why-apples-new-m1-chips-are-essential-for-rapid-ios-development/) that all iOS developers are experiencing on their Apple Silicon Macs and decided to invest in developer productivity. 
-So I got a brand new Macbook Pro with an Apple M1 Max chip. :tada:
+So I got a brand new Macbook Pro with an Apple M1 Max chip. 🎉
 
 ![New Macbook Pro M1 Max](./new_mbp_m1_max.png)
 
 #### Setup Mission Control
 
-During WWDC'22, Apple announced its new [Stage Manager](https://9to5mac.com/2022/06/29/stage-manager-on-mac/) feature on Macs, but long before that, I found managing or focusing on tasks and switching between apps/windows to be quite stressful. So, by utilising the existing features, namely Hot Corners and virtual desktops, I've grown quite accustomed to my setup. That's why, on every Mac I've used in the last decade, I've always started by configuring hot corners and a couple of virtual desktops with keyboard shortcuts.
+During WWDC'22, Apple announced its new [Stage Manager](https://9to5mac.com/2022/06/29/stage-manager-on-mac/) feature on Macs, but long before that, I found managing or focusing on tasks and switching between apps/windows to be quite stressful. So, by utilising the existing features, namely Hot Corners and virtual desktops, I've grown quite accustomed to my setup.  
+That's why, on every Mac I've used in the last decade, I've always started by configuring hot corners and a couple of virtual desktops with keyboard shortcuts.
 
 ![Mission Control on macOS](./mission_control.png)
 
@@ -42,7 +43,9 @@ echo $HOME
 
 As an [Apple developer](https://twitter.com/ajithrnayak/status/1534043431122927616), latest version of Xcode is pretty much everything I need. However, I will occasionally require beta builds or even older versions for a legacy codebase. 
 
-Xcode can be downloaded from [Developer/Downloads](https://developer.apple.com/download/) or the Mac App Store. However, friends do not allow friends to download Xcode from the App Store. So, I will use the easiest way to install and switch between multiple versions of Xcode - [Xcodes App](https://github.com/RobotsAndPencils/XcodesApp).
+Xcode can be downloaded from [Developer/Downloads](https://developer.apple.com/download/) or the Mac App Store. However, as the saying goes 
+> "Friends do not allow friends to download Xcode from the App Store."
+So, I will use the easiest way to install and switch between multiple versions of Xcode - [Xcodes App](https://github.com/RobotsAndPencils/XcodesApp).
 
 ![Xcodes App](./xcodes_app.png)
 
@@ -148,24 +151,31 @@ To achieve this, I prefer to use [Github's guide](https://docs.github.com/en/aut
 Up next, allow me to install a few of development tools that I use frequently and in almost every project.
 
 [**Visual Studio Code**](https://code.visualstudio.com)
+
 This is by far the best code editor I've ever used. It does so many things the right way. I'm always impressed by the user experience. 
 
 **[Sourcetree](https://www.sourcetreeapp.com)**
+
 A free (though it shouldn't be) Git client for Mac that I'm very familiar with.  
 
 **[Postman](https://www.postman.com)**
+
 API lifecycle management tool that is widely used. Built with pride in 🇮🇳. 
 
 **[Typora](https://typora.io)**
+
 If I'm blogging anything, I use this seamless markdown editor.
 
-**[Slash](https://getslash.co)** 
+**[Slash](https://getslash.co)**
+
 Because of its simplicity, I mostly use Apple's Notes app for task management. I like to keep a daily schedule, and the Slash app works best for me. I was able to replicate what worked with Notes in this app.
 
 **[Dato](https://sindresorhus.com/dato)**
+
 This is actually a better menu bar clock with calendar and time zones.
 
 **[Spotify](http://spotify.com)**
+
 I have an Apple Music subscription, but Spotify's music discovery is simply amazing.
 
 #### Install Cocoapods
