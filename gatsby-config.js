@@ -73,8 +73,9 @@ module.exports = {
             options: {
               maxWidth: 700,
               linkImagesToOriginal: true,
+              backgroundColor: `transparent`,
               quality: 90,
-              tracedSVG: { color: "#4E5FFF" },
+              tracedSVG: { color: "#707070" },
             },
           },
           {
