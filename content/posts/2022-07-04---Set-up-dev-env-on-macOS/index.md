@@ -8,7 +8,7 @@ tag: "Developer Guide"
 excerpt: "I got a new Macbook and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development."
 ---
 
-I got a new Macbook and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development.
+I got a new Macbook Pro and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development.
 
 #### What have I got? 
 My employer acknowledged the [productivity boost](https://doordash.engineering/2022/03/01/why-apples-new-m1-chips-are-essential-for-rapid-ios-development/) that all iOS developers are experiencing on their Apple Silicon Macs and decided to invest in developer productivity. 
@@ -18,7 +18,7 @@ So I got a brand new Macbook Pro with an Apple M1 Max chip. 🎉
 
 #### Setup Mission Control
 
-During WWDC'22, Apple announced its new [Stage Manager](https://9to5mac.com/2022/06/29/stage-manager-on-mac/) feature on Macs, but long before that, I found managing or focusing on tasks and switching between apps/windows to be quite stressful. So, by utilising the existing features, namely Hot Corners and virtual desktops, I've grown quite accustomed to my setup.  
+During WWDC'22, Apple announced its new [Stage Manager](https://9to5mac.com/2022/06/29/stage-manager-on-mac/) feature on Macs, but long before that, I found managing or focusing on tasks and switching between apps/windows to be quite stressful. So, by utilising the existing features, namely Hot Corners and Virtual Desktops, I've grown quite accustomed to my setup.  
 That's why, on every Mac I've used in the last decade, I've always started by configuring hot corners and a couple of virtual desktops with keyboard shortcuts.
 
 ![Mission Control on macOS](./mission_control.png)
@@ -38,13 +38,16 @@ pwd
 # or
 echo $HOME
 ```
+I've used [Oh My Zsh](https://ohmyz.sh) in the past, but I'm going to save it for later this time.
 
 #### Install Xcode
 
 As an [Apple developer](https://twitter.com/ajithrnayak/status/1534043431122927616), latest version of Xcode is pretty much everything I need. However, I will occasionally require beta builds or even older versions for a legacy codebase. 
 
 Xcode can be downloaded from [Developer/Downloads](https://developer.apple.com/download/) or the Mac App Store. However, as the saying goes 
-> "Friends do not allow friends to download Xcode from the App Store."
+
+> "Friends don't let friends download Xcode from the App Store."
+
 So, I will use the easiest way to install and switch between multiple versions of Xcode - [Xcodes App](https://github.com/RobotsAndPencils/XcodesApp).
 
 ![Xcodes App](./xcodes_app.png)
@@ -55,7 +58,7 @@ I'm going to install a [few programming-focused fonts](https://twitter.com/ajith
 
 Dusk theme + Hermit Font = 💞
 
-For my custom themes, I keep a [open-source repo](https://github.com/ajithrnayak/xcode-themes). Let's follow the repo's instructions! 
+For my custom themes, I maintain an [open-source repo](https://github.com/ajithrnayak/xcode-themes). Let's follow the instructions in the repo!
 
 And, if you want to give it a shot, go ahead!
 
@@ -180,7 +183,7 @@ I have an Apple Music subscription, but Spotify's music discovery is simply amaz
 
 #### Install Cocoapods
 
-CocoaPods is a package manager for iOS development. It is built with Ruby and is installable with the default Ruby available on macOS. Default ruby is recommended.
+CocoaPods is a package manager for iOS development. It is built with Ruby and is installable with the default Ruby available on macOS.
 
 ```bash
 # Using Homebrew
@@ -223,12 +226,14 @@ To confirm that this worked, you can run `npm --version` and `node --version`.
 The Gatsby command line interface (CLI) is a tool that let's me quickly run commands for developing this very own blogging website which is [built using Gatsby](https://github.com/ajithrnayak/ajith_blog/).
 
 ```bash
+brew install gatsby-cli
+# or
 npm install -g gatsby-cli
 ```
 
 #### Install Figma
 
-I'm an aspiring designer who is constantly learning, sketching, and prototyping my concepts on Figma. So, allow me to install the fantastic design tool Figma.
+I'm [an aspiring designer](https://dribbble.com/ajithrnayak) who is constantly learning, sketching, and prototyping my ideas on Figma. So, allow me to install the fantastic design tool Figma.
 
 ![Figma macOS Icon](./figma_icon.png)
 
