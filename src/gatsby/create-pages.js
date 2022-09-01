@@ -13,6 +13,7 @@ const createPages = ({ graphql, actions }) => {
         ) {
           edges {
             node {
+              excerpt(truncate: true)
               frontmatter {
                 title
                 path

@@ -7,7 +7,7 @@
 
 .pagination {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -34,6 +34,7 @@
 
 .page_title {
   font-family: $header-font-family;
+  font-weight: $bold;
 }
 
 .post_excerpt {

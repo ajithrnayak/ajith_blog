@@ -11,9 +11,11 @@ const Pagination = ({ previous, next }) => {
             {previous && (
               <div className={styles.previous}>
                 <p className={styles.pagination_label}>Previous</p>
-                <Link to={previous.frontmatter.path} rel="prev">
+                <hr></hr>
+                <Link className={styles.page_title} to={previous.frontmatter.path} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
+              <p className={styles.post_excerpt}>{previous.excerpt}</p>
               </div>
             )}
           </li>
@@ -21,9 +23,11 @@ const Pagination = ({ previous, next }) => {
             {next && (
               <div className={styles.next}>
                 <p className={styles.pagination_label}>Next</p>
-                <Link to={next.frontmatter.path} rel="next">
+                <hr></hr>
+                <Link className={styles.page_title} to={next.frontmatter.path} rel="next">
                   {next.frontmatter.title} →
                 </Link>
+                <p className={styles.post_excerpt}>{next.excerpt}</p>
               </div>
             )}
           </li>
