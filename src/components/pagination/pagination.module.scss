@@ -31,3 +31,13 @@
   margin-bottom: 0;
   color: $color-secondary;
 }
+
+.page_title {
+  font-family: $header-font-family;
+}
+
+.post_excerpt {
+  color: inherit;
+  margin: 0;
+  font-size: $small-font-size;
+}

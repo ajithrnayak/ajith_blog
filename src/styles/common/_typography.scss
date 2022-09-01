@@ -1,11 +1,11 @@
 // Typography
 
-$font-name: "Space Grotesk";
+$header-font-name: "Space Grotesk";
 $title-font-name: "Pacifico";
 
 $root-font-size: 18px;
 
-$title-font-size: 48px;
+$title-font-size: 44px;
 $base-font-size: 18px;
 $small-font-size: 16px;
 
@@ -24,10 +24,8 @@ $extrabold: 800;
 $black: 900;
 
 // Fonts
-$base-font-family-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-$base-font-family-default: $font-name, $base-font-family-fallback;
+$system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$title-font-family-fallback: "Merriweather", Georgia, "Times New Roman", Times,
-  serif;
-$title-font-family: $title-font-name, $title-font-family-fallback;
+$base-font-family-default: $system-ui;
+$title-font-family: $title-font-name, $system-ui;
+$header-font-family: $header-font-name, $system-ui;
