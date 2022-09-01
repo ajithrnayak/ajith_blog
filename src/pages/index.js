@@ -24,7 +24,7 @@ export const postsQuery = graphql`
           timeToRead
           frontmatter {
             category
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMM DD, YYYY")
             excerpt
             path
             tag

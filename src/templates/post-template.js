@@ -45,7 +45,7 @@ export const query = graphql`
       timeToRead
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMM DD, YYYY")
         excerpt
         tag
         path
