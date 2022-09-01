@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
+  font-family: $header-font-family;
   font-weight: $bold;
 }
 
@@ -102,20 +102,21 @@ hr {
   border-style: initial;
   border-color: initial;
   border-image: initial;
-  margin: 1rem;
+  @include margin-bottom(0.5);
 }
 
 a {
   display: inline-block;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: inherit;
+  color: $color-link;
   position: relative;
   cursor: pointer;
 
   &:hover,
   &:focus {
     color: $color-link-hover;
+    text-decoration: underline;
   }
 }
 

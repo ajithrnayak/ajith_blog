@@ -9,7 +9,7 @@
 }
 
 .post_title {
-  font-family: inherit;
+  font-family: $header-font-family;
   font-weight: $medium;
   font-size: $base-font-size * 2.5;
   @include line-height(2.5);

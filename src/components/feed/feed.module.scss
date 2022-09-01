@@ -20,6 +20,7 @@
   margin-bottom: 0;
   font-size: $base-font-size * 1.5;
   font-weight: $bold;
+  font-family: $header-font-family;
 }
 
 .post_title_link {
@@ -28,7 +29,7 @@
   color: inherit;
   &:hover,
   &:focus {
-    border-bottom: 1px solid $color-link-hover;
+    text-decoration: underline;
   }
 }
 
