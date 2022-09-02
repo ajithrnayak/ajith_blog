@@ -5,7 +5,7 @@ import PostMeta from "../components/post-meta/post-meta"
 import PostContent from "../components/post-content/post-content"
 import Pagination from "../components/pagination/pagination"
 import BuyMeCoffee from "../components/buymecoffee/buymecoffee"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { DiscussionEmbed } from "disqus-react"
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -21,7 +21,7 @@ const PostTemplate = ({ data, pageContext }) => {
   
   return (
     <Layout>
-      <SEO
+      <Seo
         title={frontmatter.title}
         description={frontmatter.excerpt || frontmatter.description}
         pathname={frontmatter.path}

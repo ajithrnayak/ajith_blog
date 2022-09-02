@@ -2,19 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import Feed from "../components/feed/feed"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
-const BlogFeed = ({ data }) => {
+const Home = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-      <SEO title="All posts" />
+      <Seo title="All posts" />
       <Feed posts={edges} />
     </Layout>
   )
 }
 
-export default BlogFeed
+export default Home
 
 export const postsQuery = graphql`
   query PostsQuery {
