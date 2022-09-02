@@ -8,6 +8,8 @@
 $vantage-blue: #4E5FFF;
 $white-smoke: #FBFBFB;
 $rich-black: #1D1D1F;
+$charcoal: #30384B;
+$manatee: #8A97AB;
 $nickel: #617073;
 $white: #fff;
 $black: #000;
@@ -16,14 +18,14 @@ $silly-blue: #b3d4fc;
 // main color palette
 // =============
 $color-primary: $vantage-blue;
-$color-secondary: $nickel;
+$color-secondary: $manatee;
 $color-accent: $vantage-blue;
 $color-shadow: rgba($black, .125);
 
 // Common colors
 $color-background-light: $white-smoke;
 $color-background-dark: $rich-black;
-$color-text-light: $rich-black;
+$color-text-light: $charcoal;
 $color-text-dark: $white-smoke;
 $color-text-caption: $color-secondary;
 $color-underline: $color-primary;
