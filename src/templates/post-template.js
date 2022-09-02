@@ -25,7 +25,7 @@ const PostTemplate = ({ data, pageContext }) => {
         title={frontmatter.title}
         description={frontmatter.excerpt || frontmatter.description}
         pathname={frontmatter.path}
-        image={frontmatter.cover.childImageSharp?.fluid}
+        image={frontmatter.cover}
         article={true}
       />
       <article>
