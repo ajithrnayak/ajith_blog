@@ -8,7 +8,7 @@ const Home = ({ data }) => {
   const { nodes } = data.allMarkdownRemark
   return (
     <Layout>
-      <Seo title="All posts" />
+      <Seo title="Blog Posts" description="All recent blog posts" />
       <Feed posts={nodes} />
     </Layout>
   )
