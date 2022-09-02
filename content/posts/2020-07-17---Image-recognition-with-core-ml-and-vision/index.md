@@ -5,6 +5,7 @@ draft: false
 path: "/image-recognition-with-core-ml-and-vision"
 category: "iOS"
 tag: "iOS Development"
+cover: "./blog_cover.png"
 excerpt: "Our goal is to build a simple implementation of image recognition. To achieve this, we will use the Vision Framework, which was introduced in iOS 11 to apply computer vision algorithms to perform a variety of tasks on input images and video."
 ---
 

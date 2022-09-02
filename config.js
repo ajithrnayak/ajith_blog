@@ -3,7 +3,7 @@
 module.exports = {
   url: "https://ajith.blog",
   pathPrefix: "/",
-  title: "Ajith's blog",
+  title: "Ajith's Blog",
   description: "I build apps and occasionally blog about my observations and frustrations from my work here. Mostly about Swift, Xcode, and iOS development, but also about other interesting topics.",
   subtitle: "I occasionally blog here. Mostly about Swift, Xcode, and iOS development, but also about other interesting topics.",
   copyright: "Designed & developed by Ajith Renjala",
