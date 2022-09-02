@@ -5,11 +5,11 @@ import Feed from "../components/feed/feed"
 import Seo from "../components/seo"
 
 const Home = ({ data }) => {
-  const { edges } = data.allMarkdownRemark
+  const { nodes } = data.allMarkdownRemark
   return (
     <Layout>
       <Seo title="All posts" />
-      <Feed posts={edges} />
+      <Feed posts={nodes} />
     </Layout>
   )
 }
@@ -17,21 +17,20 @@ const Home = ({ data }) => {
 export default Home
 
 export const postsQuery = graphql`
-  query PostsQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          timeToRead
-          frontmatter {
-            category
-            date(formatString: "MMM DD, YYYY")
-            excerpt
-            path
-            tag
-            title
-          }
-        }
+query PostsQuery {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    nodes {
+      timeToRead
+      frontmatter {
+        category
+        date(formatString: "MMM DD, YYYY")
+        excerpt
+        path
+        tag
+        title
       }
     }
   }
+}
+
 `
