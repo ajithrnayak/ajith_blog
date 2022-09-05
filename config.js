@@ -19,6 +19,6 @@ module.exports = {
     bio: "Swift/Objective-C developer since iOS 6.",
   },
   social: {
-    twitter: `ajthrnayak`,
+    twitter: `@ajthrnayak`,
   },
 }
