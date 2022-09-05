@@ -3,20 +3,26 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-const Seo = ({ title, description, pathname, image, article }) => {
-  const metadata = useSiteMetadata()
+const constructUrl = (baseUrl, path) =>
+  (!baseUrl || !path) ? null : `${baseUrl}${path}`;
+
+const Seo = ({ title, description, pathname, article, imageUrl, imageAlt }) => {
+  const {site, iconImage} = useSiteMetadata()
+  const metadata = site.siteMetadata
 
   const defaultTitle = metadata.title
   const defaultDescription = metadata.description
   const siteUrl = metadata.url
-  const defaultImage = metadata.icon
+  const defaultImageUrl = constructUrl(siteUrl, iconImage?.childImageSharp?.fixed?.src)
   const twitterUsername = metadata.twitterUsername
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname || ""}`,
+    ogImageUrl: imageUrl ? (constructUrl(siteUrl, imageUrl)) : defaultImageUrl,
+    url: constructUrl(siteUrl, pathname || ""),
+    cardStyle: imageUrl ? "summary_large_image" : "summary",
+    imageAlt: imageAlt || "Ajith's Blog logo",
   }
 
   return (
@@ -25,7 +31,7 @@ const Seo = ({ title, description, pathname, image, article }) => {
 
       {/* -- Primary Meta Tags -- */}
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+      <meta name="image" content={seo.ogImageUrl} />
 
       {/* -- Open Graph / Facebook -- */}
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -34,10 +40,12 @@ const Seo = ({ title, description, pathname, image, article }) => {
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
-      {seo.image && <meta property="og:image" content={seo.image} />}
+      {seo.ogImageUrl && <meta property="og:image" content={seo.ogImageUrl} />}
 
       {/* -- Twitter -- */}
-      <meta name="twitter:card" content="summary_large_image" />
+      {/* -- If a post has an image, use the larger card. Otherwise the default image is just a small logo, so use the smaller card. -- */}
+      {<meta name="twitter:card" content= {seo.cardStyle} />}
+
       {twitterUsername && (
         <meta name="twitter:creator" content={twitterUsername} />
       )}
@@ -45,7 +53,8 @@ const Seo = ({ title, description, pathname, image, article }) => {
       {seo.description && (
         <meta name="twitter:description" content={seo.description} />
       )}
-      {seo.image && <meta name="twitter:image" content={seo.image} />}
+      {<meta name="twitter:image" content={seo.ogImageUrl} />}
+      {<meta name="twitter:image:alt" content={imageAlt} />} 
     </Helmet>
   )
 }

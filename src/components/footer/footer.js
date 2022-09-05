@@ -5,7 +5,8 @@ import { OutboundLink } from 'gatsby-plugin-gtag'
 
 const Footer = () => {
   const data = useSiteMetadata()
-  const { copyright, sourceCode } = data
+  const { copyright, sourceCode } = data.site.siteMetadata
+
 
   return (
     <footer>

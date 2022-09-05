@@ -18,6 +18,8 @@ const PostTemplate = ({ data, pageContext }) => {
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: frontmatter.path },
   }
+
+  const coverImageUrl = frontmatter.coverImage.src.childImageSharp?.fixed?.src
   
   return (
     <Layout>
@@ -25,8 +27,9 @@ const PostTemplate = ({ data, pageContext }) => {
         title={frontmatter.title}
         description={frontmatter.excerpt || frontmatter.description}
         pathname={frontmatter.path}
-        image={frontmatter.cover}
         article={true}
+        imageUrl={coverImageUrl}
+        imageAlt= {frontmatter.coverImage.alt}
       />
       <article>
       <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
@@ -50,15 +53,18 @@ export const query = graphql`
         excerpt
         tag
         path
-        cover {
-          childImageSharp {
-            fixed(height: 600, width: 1200) {
-              src
-            }
-            fluid(maxWidth: 700, maxHeight: 500) {
-              ...GatsbyImageSharpFluid
+        coverImage {
+          src {
+            childImageSharp {
+              fixed(height: 600, width: 1200) {
+                src
+              }
+              fluid(maxWidth: 700, maxHeight: 500) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
+          alt
         }
       }
     }

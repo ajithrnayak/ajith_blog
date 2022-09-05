@@ -6,10 +6,11 @@ import styles from "./header.module.scss"
 
 const Header = () => {
   const data = useSiteMetadata()
+  const { siteMetadata } = data.site
 
   return (
     <header className={styles.header}>
-      <TitleAndCaption data={data} />
+      <TitleAndCaption data={siteMetadata} />
       <ThemeSwitcher />
     </header>
   )

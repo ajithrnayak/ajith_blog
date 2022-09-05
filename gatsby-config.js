@@ -38,20 +38,17 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content`,
-        name: "pages",
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "fonts",
         path: `${__dirname}/static/fonts`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
         path: `${__dirname}/static/images`,
       },
     },
