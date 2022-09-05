@@ -6,9 +6,11 @@ import Seo from "../components/seo"
 
 const Home = ({ data }) => {
   const { nodes } = data.allMarkdownRemark
+  const imageUrl = data.homeImage.childImageSharp?.fixed?.src
+
   return (
     <Layout>
-      <Seo title="Blog Posts"/>
+      <Seo title="Blog Posts" imageUrl={imageUrl}/>
       <Feed posts={nodes} />
     </Layout>
   )
@@ -28,6 +30,13 @@ query PostsQuery {
         path
         tag
         title
+      }
+    }
+  }
+  homeImage: file(relativePath: {eq: "home_icon.png"}) {
+    childImageSharp {
+      fixed(height: 512, width: 1024) {
+        src
       }
     }
   }
