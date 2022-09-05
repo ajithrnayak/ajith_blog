@@ -4,8 +4,6 @@
   opacity: 0.65;
   position: relative;
   border-radius: 5px;
-  width: 40px;
-  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +25,7 @@
 .moon {
   @include toggle_button;
   position: relative;
-  width: 24px;
+  width: 32px;
   height: 24px;
   border-radius: 50%;
   border: none;
@@ -47,7 +45,7 @@
   &:before {
     right: -9px;
     top: -9px;
-    height: 24px;
+    height: 32px;
     width: 24px;
     border: none;
     transform: translate(0, 0);
