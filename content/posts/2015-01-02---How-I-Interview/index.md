@@ -5,6 +5,9 @@ draft: false
 path: "/how-i-interview"
 category: "Thoughts"
 tag: "Developer Guide"
+coverImage:
+    src: "./blog_cover.png"
+    alt: "Blog Cover Image"
 excerpt: "As an agency developer, I've had a chance to be part of the recruiting team that recruits new members for the iOS team. Here, I'd like to take you through my thoughts and through the process of conducting interviews for an iOS developer role."
 ---
 

@@ -5,6 +5,9 @@ draft: false
 path: "/zombies-of-cocoa-world"
 category: "iOS Development"
 tag: "iOS Development"
+coverImage:
+    src: "./blog_cover.png"
+    alt: "Blog Cover Image"
 excerpt: "Everyone stay calm, these zombies don't mean any harm!"
 ---
 

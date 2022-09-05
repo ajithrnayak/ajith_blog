@@ -5,6 +5,9 @@ draft: false
 path: "/set-up-dev-env-on-macOS"
 category: "Guide"
 tag: "Developer Guide"
+coverImage:
+    src: "./blog_cover.png"
+    alt: "Blog Cover Image"
 excerpt: "I got a new Macbook and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development."
 ---
 
