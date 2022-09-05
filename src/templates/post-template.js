@@ -56,7 +56,7 @@ export const query = graphql`
         coverImage {
           src {
             childImageSharp {
-              fixed(height: 600, width: 1200) {
+              fixed(height: 1350, width: 2400) {
                 src
               }
               fluid(maxWidth: 700, maxHeight: 500) {

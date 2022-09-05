@@ -29,7 +29,7 @@ export const useSiteMetadata = () => {
       }
       iconImage: file(relativePath: {eq: "logo-icon.png"}) {
         childImageSharp {
-          fixed(height: 260, width: 260) {
+          fixed(height: 1024, width: 1024) {
             src
           }
         }
