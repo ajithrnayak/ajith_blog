@@ -479,7 +479,8 @@ export default Header
 
 #### Conclusion
 
-I'm glad I chose Gatsby because it was so simple to build something at the time. However, the developer in me thoroughly enjoyed Next.js's challenges. It felt like I had complete control over the implementation. 
+I'm glad I chose Gatsby because it was so simple to build something at the time. However, the developer in me thoroughly enjoyed Next.js's challenges. It felt like I had complete control over the implementation.
+ 
 I'd like to replicate more features, such as the dark mode theme, search engine optimization, pagination and more, but I'm happy with the outcome of my experiment so far. Maybe leave the complete migration to another day. 
 
 Here's a link to a [Github repo](https://github.com/ajithrnayak/ajith_blog_v2) where you can do more digging.
