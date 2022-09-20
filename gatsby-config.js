@@ -4,6 +4,7 @@
 
 "use strict"
 
+const { author } = require("./config.js")
 const siteConfig = require("./config.js")
 
 module.exports = {
