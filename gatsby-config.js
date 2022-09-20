@@ -87,6 +87,7 @@ module.exports = {
             options: {
               aliases: { sh: "bash", js: "javascript" },
               showLineNumbers: false,
+              noInlineHighlight: true,
             },
           },
           "gatsby-remark-copy-linked-files",
