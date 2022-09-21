@@ -8,7 +8,7 @@ tag: "iOS Development"
 coverImage:
     src: "./blog_cover.png"
     alt: "Blog Cover Image"
-excerpt: "Today I'm going to explain how I was able to implement an audio player for files in.ogg format. I recently worked on a meditation app that used.ogg files to stream the meditations. Let's look at how I approached the implementation, why it was a challenging task, and how one meme lived up to its hype."
+excerpt: "Today I'm going to explain how I was able to implement an audio player for files in .ogg format. I recently worked on a meditation app that used .ogg files to stream the meditations. Let's look at how I approached the implementation, why it was a challenging task, and how one meme lived up to its hype."
 ---
 
 Today I'm going to explain how I was able to implement an audio player for files in .ogg format. I recently worked on a meditation app that used .ogg files to stream the meditations. Let's look at how I approached the implementation, why it was a challenging task, and how one meme lived up to its hype. 
@@ -56,7 +56,7 @@ Now, assuming you're following along, build and run the starter project. You'll 
 
 ![Starter Project Screenshot](./starter_project_ss.png)
 
-VLCKit-Example is a straightforward SwiftUI iOS app built with MVVM. The user can play and pause an audio file. Feel free to explore the project's source code and files.
+This VLCKit-Example is a straightforward SwiftUI iOS app built in MVVM pattern. The user can play and pause an audio file. Feel free to explore the project's source code and files.
 
 Ready to implement media player? Let's go ahead and integrate VLCKit.
 
