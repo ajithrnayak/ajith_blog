@@ -36,7 +36,7 @@ You're probably thinking about AVFoundation right now. I did as well! It turns o
 
 We are gonna treat option 2 as our plan A and find an alternative to AVPlayer. 
 
-Enter [VLCKit](https://www.videolan.org)!
+Enter [VLCKit](https://code.videolan.org/videolan/VLCKit)!
 
 #### VLCKit
 
