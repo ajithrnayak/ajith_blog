@@ -141,7 +141,7 @@ If you recall the design requirement, we need to display duration of the video i
 
 https://developers.google.com/youtube/v3/docs/videos/list#try-it
 
-Now, keep in mind that because we are dealing with a collection of videos (up to 20 videos based on'maxRecentTalks,' retrieving details about a specific video by looping through playlist items is not the best option. There is a better way; the 'id' parameter accepts a list of YouTube video IDs separated by commas. This means that the same API can retrieve data for a collection of videos as well.
+Now, keep in mind that because we are dealing with a collection of videos (up to 20 videos based on `maxRecentTalks`), retrieving details about a specific video by looping through playlist items is not the best option. There is a better way; the 'id' parameter accepts a list of YouTube video IDs separated by commas. This means that the same API can retrieve data for a collection of videos as well.
 
 In your API request, you can therefore include one or more video IDs.
 
