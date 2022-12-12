@@ -27,7 +27,7 @@ Here is the API Reference guide for [The YouTube Data API](https://developers.go
 
 But before we get started, we'll need an [API key](https://developers.google.com/youtube/v3/getting-started#before-you-start) so that we can authenticate and identify the submitted API requests. Follow the instructions to obtain the key.
 
-Note that YouTube uses playlists to identify special collections of videos for a channel, such as uploaded videos and positively rated (liked) videos. We are interested in a playlist of uploaded videos, so we must obtain the 'playlistId' for this playlist.
+Note that YouTube uses playlists to identify special collections of videos(such as uploaded videos and positively rated (liked) videos) for a channel. We are interested in a playlist of uploaded videos, so we must obtain the 'playlistId' for this playlist.
 
 ###### Get PlaylistId
 
@@ -59,7 +59,7 @@ GET https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&id=UC
 
 There you have it, we were able to determine the "playlistId" for uploads to Fireship.io channel using the channel ID.
 
-Next, retrieve the playlist items i,e videos in the "uploads" playlist.
+Next, for the obtained "playlistId," retrieve the playlist items, i,e videos in the "uploads" playlist.
 
 ###### Get Playlist Items
 
@@ -141,7 +141,7 @@ If you recall the design requirement, we need to display duration of the video i
 
 https://developers.google.com/youtube/v3/docs/videos/list#try-it
 
-Now, keep in mind that retrieving details about a specific video is not the best option given that we are dealing with a collection of videos (up to 20 videos based on `maxRecentTalks`). There is a better way, and it retrieves data for a collection of videos as well. The 'id' parameter value accepts a list of YouTube video IDs separated by commas.
+Now, keep in mind that because we are dealing with a collection of videos (up to 20 videos based on'maxRecentTalks,' retrieving details about a specific video by looping through playlist items is not the best option. There is a better way; the 'id' parameter accepts a list of YouTube video IDs separated by commas. This means that the same API can retrieve data for a collection of videos as well.
 
 In your API request, you can therefore include one or more video IDs.
 
@@ -226,7 +226,7 @@ export async function fetchRecentTalks() {
 
 Wonderful!
 
-But wait, the format of the duration string isn't what we want. Instead, the format is [ISO 8601](https://en.wikipedia.org/wiki/ISO 8601#Durations). So we need to figure out how to parse ISO 8601 duration strings in JavaScript.
+But wait, the format of the duration string isn't what we want. Instead, the format is [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). So we need to figure out how to parse ISO 8601 duration strings in JavaScript.
 
 #### Parse ISO 8601 Duration Strings
 
@@ -474,7 +474,7 @@ export default {
 </script>
 ```
 
-The component expects to receive a "talk" object as a prop, which it uses to populate the template with the relevant information. It also has a computed property called "thumbnailUrl" that determines the URL of the thumbnail image to display based on the availability of different thumbnail sizes.
+The component expects to receive a "talk" object as a prop, which it uses to populate the template with the relevant information. It also has a computed property called `thumbnailUrl` that determines the URL of the thumbnail image to display based on the availability of different thumbnail sizes.
 
 Let's take a look at the final result now.
 
