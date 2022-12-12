@@ -1,25 +1,23 @@
 @import "../theme";
 
-
 /** Line-Height */
- @mixin line-height($number) {
-  line-height: #{ $number * $root-em + "px"};
+@mixin line-height($number) {
+  line-height: #{$number * $root-em + "px"};
 }
 
 /** Margin */
- @mixin margin-top($number) {
-  margin-top: #{ $number * $root-em + "px"};
+@mixin margin-top($number) {
+  margin-top: #{$number * $root-em + "px"};
 }
 
 @mixin margin-bottom($number) {
-  margin-bottom: #{ $number * $root-em + "px"};
+  margin-bottom: #{$number * $root-em + "px"};
 }
 
-
 @mixin padding-left($number) {
-  padding-left: #{ $number * $root-em + "px"};
+  padding-left: #{$number * $root-em + "px"};
 }
 
 @mixin padding-right($number) {
-  padding-right: #{ $number * $root-em + "px"};
+  padding-right: #{$number * $root-em + "px"};
 }

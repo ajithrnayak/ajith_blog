@@ -13,14 +13,14 @@ const PostTemplate = ({ data, pageContext }) => {
   const { frontmatter } = markdownRemark
   const timeToRead = markdownRemark.timeToRead
   const { previous, next } = pageContext
-  
+
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: frontmatter.path },
   }
 
   const coverImageUrl = frontmatter.coverImage.src.childImageSharp?.fixed?.src
-  
+
   return (
     <Layout>
       <Seo
@@ -29,11 +29,11 @@ const PostTemplate = ({ data, pageContext }) => {
         pathname={frontmatter.path}
         article={true}
         imageUrl={coverImageUrl}
-        imageAlt= {frontmatter.coverImage.alt}
+        imageAlt={frontmatter.coverImage.alt}
       />
       <article>
-      <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
-      <PostContent markdownRemark={markdownRemark} />
+        <PostMeta frontmatter={frontmatter} timeToRead={timeToRead} />
+        <PostContent markdownRemark={markdownRemark} />
       </article>
       <BuyMeCoffee />
       <Pagination previous={previous} next={next} />
@@ -43,7 +43,7 @@ const PostTemplate = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($pagePath: String!) {
+  query ($pagePath: String!) {
     markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
       html
       timeToRead

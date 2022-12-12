@@ -145,7 +145,7 @@ ul {
 
 p {
   @include line-height(1);
-  @include margin-bottom(1.0);
+  @include margin-bottom(1);
 }
 
 blockquote {

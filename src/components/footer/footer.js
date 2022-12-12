@@ -1,12 +1,11 @@
 import React from "react"
 import styles from "./footer.module.scss"
 import { useSiteMetadata } from "../../hooks/use-site-metadata"
-import { OutboundLink } from 'gatsby-plugin-gtag'
+import { OutboundLink } from "gatsby-plugin-gtag"
 
 const Footer = () => {
   const data = useSiteMetadata()
   const { copyright, sourceCode } = data.site.siteMetadata
-
 
   return (
     <footer>

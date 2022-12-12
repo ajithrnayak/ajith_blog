@@ -10,7 +10,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="Blog Posts" imageUrl={imageUrl}/>
+      <Seo title="Blog Posts" imageUrl={imageUrl} />
       <Feed posts={nodes} />
     </Layout>
   )
@@ -19,27 +19,26 @@ const Home = ({ data }) => {
 export default Home
 
 export const postsQuery = graphql`
-query PostsQuery {
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
-    nodes {
-      timeToRead
-      frontmatter {
-        category
-        date(formatString: "MMM DD, YYYY")
-        excerpt
-        path
-        tag
-        title
+  query PostsQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      nodes {
+        timeToRead
+        frontmatter {
+          category
+          date(formatString: "MMM DD, YYYY")
+          excerpt
+          path
+          tag
+          title
+        }
+      }
+    }
+    homeImage: file(relativePath: { eq: "home_icon.png" }) {
+      childImageSharp {
+        fixed(height: 512, width: 1024) {
+          src
+        }
       }
     }
   }
-  homeImage: file(relativePath: {eq: "home_icon.png"}) {
-    childImageSharp {
-      fixed(height: 512, width: 1024) {
-        src
-      }
-    }
-  }
-}
-
 `

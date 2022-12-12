@@ -6,8 +6,8 @@ path: "/how-to-opt-out-of-dark-mode-on-iOS"
 category: "iOS"
 tag: "iOS Development"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "Here's how you can opt-out of Apple's new dark interface style on iOS. You can either opt-out of dark mode entirely or choose specific views, view controllers, or window."
 ---
 

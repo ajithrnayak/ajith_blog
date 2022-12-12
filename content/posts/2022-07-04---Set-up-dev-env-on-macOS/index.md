@@ -6,15 +6,16 @@ path: "/set-up-dev-env-on-macOS"
 category: "Guide"
 tag: "Developer Guide"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "I got a new Macbook and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development."
 ---
 
 I got a new Macbook Pro and I'm about to set it up for work. As developers, we have all been there. Oftentimes, when we switch to new jobs. And, this is my quick step-by-step guide to setup a mac for development.
 
-#### What have I got? 
-My employer acknowledged the [productivity boost](https://doordash.engineering/2022/03/01/why-apples-new-m1-chips-are-essential-for-rapid-ios-development/) that all iOS developers are experiencing on their Apple Silicon Macs and decided to invest in developer productivity. 
+#### What have I got?
+
+My employer acknowledged the [productivity boost](https://doordash.engineering/2022/03/01/why-apples-new-m1-chips-are-essential-for-rapid-ios-development/) that all iOS developers are experiencing on their Apple Silicon Macs and decided to invest in developer productivity.
 So I got a brand new Macbook Pro with an Apple M1 Max chip. 🎉
 
 ![New Macbook Pro M1 Max](./new_mbp_m1_max.png)
@@ -41,13 +42,14 @@ pwd
 # or
 echo $HOME
 ```
+
 I've used [Oh My Zsh](https://ohmyz.sh) in the past, but I'm going to save it for later this time.
 
 #### Install Xcode
 
-As an [Apple developer](https://twitter.com/ajithrnayak/status/1534043431122927616), latest version of Xcode is pretty much everything I need. However, I will occasionally require beta builds or even older versions for a legacy codebase. 
+As an [Apple developer](https://twitter.com/ajithrnayak/status/1534043431122927616), latest version of Xcode is pretty much everything I need. However, I will occasionally require beta builds or even older versions for a legacy codebase.
 
-Xcode can be downloaded from [Developer/Downloads](https://developer.apple.com/download/) or the Mac App Store. However, as the saying goes 
+Xcode can be downloaded from [Developer/Downloads](https://developer.apple.com/download/) or the Mac App Store. However, as the saying goes
 
 > "Friends don't let friends download Xcode from the App Store."
 
@@ -57,7 +59,7 @@ So, I will use the easiest way to install and switch between multiple versions o
 
 ###### Apply Xcode Theme
 
-I'm going to install a [few programming-focused fonts](https://twitter.com/ajithrnayak/status/1543923287993921538) before applying my one and only preferred Xcode theme. 
+I'm going to install a [few programming-focused fonts](https://twitter.com/ajithrnayak/status/1543923287993921538) before applying my one and only preferred Xcode theme.
 
 Dusk theme + Hermit Font = 💞
 
@@ -67,13 +69,13 @@ And, if you want to give it a shot, go ahead!
 
 #### Communication
 
-While Xcode is being installed, it's time to setup team communication apps and configure email client. 
+While Xcode is being installed, it's time to setup team communication apps and configure email client.
 
 ![Communication Apps on Dock](./communication.png)
 
 #### Install Homebrew
 
-I work on web projects on occasion, and prior to Swift Package Manager, Cocoapods was my go-to dependency manager for all of my projects. To manage these packages, I'll be using [Homebrew](https://brew.sh) - The Missing Package Manager for macOS. 
+I work on web projects on occasion, and prior to Swift Package Manager, Cocoapods was my go-to dependency manager for all of my projects. To manage these packages, I'll be using [Homebrew](https://brew.sh) - The Missing Package Manager for macOS.
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -148,25 +150,25 @@ defaults write com.apple.Finder AppleShowAllFiles TRUE;killall Finder
 
 #### Setup SSH Keys
 
-We will generate and configure Secure Shell Protocol (SSH) keys in order to establish a secure connection with development environments such as Github and Gitlab. 
+We will generate and configure Secure Shell Protocol (SSH) keys in order to establish a secure connection with development environments such as Github and Gitlab.
 
 To achieve this, I prefer to use [Github's guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
-#### Install Dev Tools & more.. 
+#### Install Dev Tools & more..
 
 Up next, allow me to install a few of development tools that I use frequently and in almost every project.
 
 [**Visual Studio Code**](https://code.visualstudio.com)
 
-This is by far the best code editor I've ever used. It does so many things the right way. I'm always impressed by the user experience. 
+This is by far the best code editor I've ever used. It does so many things the right way. I'm always impressed by the user experience.
 
 **[Sourcetree](https://www.sourcetreeapp.com)**
 
-A free (though it shouldn't be) Git client for Mac that I'm very familiar with.  
+A free (though it shouldn't be) Git client for Mac that I'm very familiar with.
 
 **[Postman](https://www.postman.com)**
 
-API lifecycle management tool that is widely used. Built with pride in 🇮🇳. 
+API lifecycle management tool that is widely used. Built with pride in 🇮🇳.
 
 **[Typora](https://typora.io)**
 
@@ -251,6 +253,7 @@ curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | 
 #### Ta-da
 
 Done!
+
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/l3V0zw9pxoZxttxHa" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/cbc-funny-comedy-mr-d-l3V0zw9pxoZxttxHa">via GIPHY</a></p>
 That will do for now to set up my development environment on a macOS.
 

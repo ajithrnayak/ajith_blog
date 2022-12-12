@@ -27,13 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-       cssLoaderOptions: {
-         esModule: false,
-         modules: {
-           namedExport: false,
-         },
-       },
-     },
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -117,8 +117,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-optimize-svgs',
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-optimize-svgs",
+    "gatsby-plugin-dark-mode",
     `gatsby-plugin-netlify`,
     `gatsby-link`,
     `gatsby-react-router-scroll`,

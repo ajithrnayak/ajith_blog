@@ -20,34 +20,41 @@
 </p>
 
 ## Design
-+ [Dribble Shot](https://dribbble.com/shots/11326543-My-Minimalistic-Blog)
-+ [Figma File](https://www.figma.com/file/3PXYqQSUKRm9lwQbwxS7Zc/ajith.blog?node-id=0%3A1)
+
+- [Dribble Shot](https://dribbble.com/shots/11326543-My-Minimalistic-Blog)
+- [Figma File](https://www.figma.com/file/3PXYqQSUKRm9lwQbwxS7Zc/ajith.blog?node-id=0%3A1)
 
 ## Features
-+ Built using Gatsby powered with Graphql
-+ Beautiful typography, minimalism and mobile first approach
-+ Uses SASS/SCSS modules
-+ Dark-mode support
-+ Markdown content
-+ Syntax highlighting in code blocks using [PrismJS](http://prismjs.com)
-+ Custom fonts stored locally
-+ [Buy me a coffee](https://www.buymeacoffee.com) support   
-+ Google Analytics
-+ Disqus Comments
+
+- Built using Gatsby powered with Graphql
+- Beautiful typography, minimalism and mobile first approach
+- Uses SASS/SCSS modules
+- Dark-mode support
+- Markdown content
+- Syntax highlighting in code blocks using [PrismJS](http://prismjs.com)
+- Custom fonts stored locally
+- [Buy me a coffee](https://www.buymeacoffee.com) support
+- Google Analytics
+- Disqus Comments
 
 **TODO**
-+ RSS Feed
+
+- RSS Feed
 
 ## Web Performance Tests
-+ Lighthouse Report - [WebPageTest](https://www.webpagetest.org/result/200507_VC_7b51fff63bbc88e5ea41a0ce29c41f0c/)
+
+- Lighthouse Report - [WebPageTest](https://www.webpagetest.org/result/200507_VC_7b51fff63bbc88e5ea41a0ce29c41f0c/)
 
 ## Set Up
 
 1. Install the Gatsby CLI
+
 ```sh
 npm install -g gatsby-cli
 ```
+
 2. Change into the working directory
+
 ```sh
 cd hello-world
 ```
@@ -55,30 +62,37 @@ cd hello-world
 #### Build for Development
 
 1. Start the development mode:
+
 ```sh
 gatsby develop
 ```
-2. View your site locally   
-Open up a new tab in your browser and navigate to http://localhost:8000/
+
+2. View your site locally  
+   Open up a new tab in your browser and navigate to http://localhost:8000/
 
 3. Stop the development server (if it’s still running)
 
 Use `CTR+C`
 
-####  Build for Production
+#### Build for Production
 
 1. Start the build process with following command
+
 ```sh
 gatsby build
 ```
+
 2. Publish the production to make it available locally. Run:
+
 ```sh
 gatsby serve
 ```
-3. Preview production site locally    
-Open up a new tab in your browser and you can view your site at http://localhost:9000
+
+3. Preview production site locally  
+   Open up a new tab in your browser and you can view your site at http://localhost:9000
 
 ## License
+
 MIT License
 
 Copyright (c) 2020 Ajith Renjala

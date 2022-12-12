@@ -6,8 +6,8 @@ path: "/iOS-design-guide"
 category: "Design"
 tag: "Design Guidelines"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "A guide of standard practices, official guidelines(HIG) for designing iOS/iPadOS applications. This cheat sheet is mainly an attempt to keep track of wide variety of devices and their design constraints that are updated regularly."
 ---
 
@@ -76,7 +76,8 @@ A status bar always extends to full width of the device. However, since the intr
 
 _Note_: Don't replace systemwide status bar with a custom one.
 
-Available styles:  
+Available styles:
+
 - Light (black icons on a white background)
 - Dark (white icons on a black background)
 

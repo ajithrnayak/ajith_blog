@@ -10,9 +10,7 @@
   @include margin-bottom(2.5);
 }
 
-
 @include breakpoint-sm {
-
   .header {
     @include margin-bottom(1.8);
   }

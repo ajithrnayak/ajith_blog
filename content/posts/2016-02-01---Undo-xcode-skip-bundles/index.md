@@ -6,8 +6,8 @@ path: "/undo-xcode-skip-bundles"
 category: "iOS"
 tag: "iOS Development"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "Xcode [on re-launch] shows a 'unexpected code bundles' alert when a new plug-in is identified. This way, Apple informs the user that it is not responsible for the negative effects of these third party bundles. Well, I skipped the bundles accidentally."
 ---
 

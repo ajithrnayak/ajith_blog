@@ -6,8 +6,8 @@ path: "/newsletters-blogs-developers-to-follow"
 category: "iOS"
 tag: "iOS Resources"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "As a full-time iOS developer, everyday I’ll be paddling towards that tight project deadline against the high winds. And, I seldom have time to stay in touch with latest trends, announcements, innovations, articles and open source inspirations surrounding iOS development. It’s difficult to stay on top of my iOS game. Can you relate?"
 ---
 

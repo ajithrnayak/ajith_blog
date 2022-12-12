@@ -6,8 +6,8 @@ path: "/find-the-dependencies-of-a-pod"
 category: "iOS"
 tag: "iOS Development"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "Xcode throws errors from a pod dependency and that particular pod isn't mentioned anywhere in your Podfile? Here's how you can find out which of your project's pod is using this erroneous pod."
 ---
 
@@ -37,7 +37,7 @@ Let's navigate to project directory and run following command:
 pod spec cat JSONWebToken
 ```
 
-Now, look up the 'dependencies' information in output. 
+Now, look up the 'dependencies' information in output.
 
 ![pod spec cat output](./pod-cat.png)
 

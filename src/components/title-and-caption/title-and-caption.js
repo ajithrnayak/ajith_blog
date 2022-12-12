@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { OutboundLink } from 'gatsby-plugin-gtag'
+import { OutboundLink } from "gatsby-plugin-gtag"
 import styles from "./title-and-caption.module.scss"
 
 const TitleAndCaption = ({ data }) => {
@@ -17,7 +17,14 @@ const TitleAndCaption = ({ data }) => {
         <p>
           {subtitle}
           <span className={styles.website}>
-            Checkout my <OutboundLink href={website} target="_blank" rel="noopener noreferrer">website.</OutboundLink>
+            Checkout my{" "}
+            <OutboundLink
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              website.
+            </OutboundLink>
           </span>
         </p>
       </div>

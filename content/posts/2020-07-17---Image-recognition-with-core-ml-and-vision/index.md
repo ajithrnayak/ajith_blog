@@ -6,8 +6,8 @@ path: "/image-recognition-with-core-ml-and-vision"
 category: "iOS"
 tag: "iOS Development"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "Our goal is to build a simple implementation of image recognition. To achieve this, we will use the Vision Framework, which was introduced in iOS 11 to apply computer vision algorithms to perform a variety of tasks on input images and video."
 ---
 
@@ -124,6 +124,7 @@ Also, add a property to `VisionMLWorker` for completion handler that gets invoke
 ```swift
 var completionHandler: ClassificationCompletionHandler? = nil
 ```
+
 <br/>
 Let's take the image to be processed, and create a `VNImageRequestHandler` object. then, on a background queue, run the vision model request asynchronously.
 
@@ -214,6 +215,7 @@ catch {
     // handle errors appropriately.
 }
 ```
+
 <br/>
 That's all you need to identify an image using 1000 classification categories. Go ahead give it a try and play around with different Core ML models.
 

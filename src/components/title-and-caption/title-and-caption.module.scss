@@ -15,15 +15,15 @@
 }
 
 .blogTitle {
-    @include margin-top(0);
-    
-    a {
+  @include margin-top(0);
+
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
       text-decoration: none;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
     }
+  }
 }
 
 .blogCaption {

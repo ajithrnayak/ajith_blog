@@ -18,11 +18,11 @@ $theme: (
 }
 
 body.light {
-  background-color: color-get('light', background);
-  color: color-get('light', text);
+  background-color: color-get("light", background);
+  color: color-get("light", text);
 }
 
 body.dark {
-  background-color: color-get('dark', background);
-  color: color-get('dark', text);
+  background-color: color-get("dark", background);
+  color: color-get("dark", text);
 }

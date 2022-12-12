@@ -6,12 +6,12 @@ path: "/how-to-play-ogg-files-on-iOS-with-VLCKit"
 category: "iOS"
 tag: "iOS Development"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "Today I'm going to explain how I was able to implement an audio player for files in .ogg format. I recently worked on a meditation app that used .ogg files to stream the meditations. Let's look at how I approached the implementation, why it was a challenging task, and how one meme lived up to its hype."
 ---
 
-Today I'm going to explain how I was able to implement an audio player for files in .ogg format. I recently worked on a meditation app that used .ogg files to stream the meditations. Let's look at how I approached the implementation, why it was a challenging task, and how one meme lived up to its hype. 
+Today I'm going to explain how I was able to implement an audio player for files in .ogg format. I recently worked on a meditation app that used .ogg files to stream the meditations. Let's look at how I approached the implementation, why it was a challenging task, and how one meme lived up to its hype.
 
 Before I show you how to do it with a SwiftUI example app, let's first understand an OGG format file.
 
@@ -19,22 +19,22 @@ Before I show you how to do it with a SwiftUI example app, let's first understan
 
 #### What is OGG format?
 
-**Ogg** is a free, open container format maintained by the [Xiph.Org](https://xiph.org) Foundation, a non-profit that develops and maintains several multimedia formats. The most common OGG file format is .ogg (audio file), which is derived from *[Ogg Vorbis](https://en.wikipedia.org/wiki/Vorbis)* as a compressed audio file used for audio. These OGG files include the artist's name, track information, and other metadata. 
+**Ogg** is a free, open container format maintained by the [Xiph.Org](https://xiph.org) Foundation, a non-profit that develops and maintains several multimedia formats. The most common OGG file format is .ogg (audio file), which is derived from _[Ogg Vorbis](https://en.wikipedia.org/wiki/Vorbis)_ as a compressed audio file used for audio. These OGG files include the artist's name, track information, and other metadata.
 
-The format allows for compression, which results in a small file with high audio quality. And, because it provides high quality in relation to the bandwidth required to stream it, many people prefer OGG over other formats such as MP3 or AAC. 
+The format allows for compression, which results in a small file with high audio quality. And, because it provides high quality in relation to the bandwidth required to stream it, many people prefer OGG over other formats such as MP3 or AAC.
 
-Perhaps the choice is debatable given the format's obscurity and the lack of hardware support across many streaming devices. 
+Perhaps the choice is debatable given the format's obscurity and the lack of hardware support across many streaming devices.
 
-You can learn more about the file format [here](https://xiph.org/ogg/). 
+You can learn more about the file format [here](https://xiph.org/ogg/).
 
 #### The Problem
 
-You're probably thinking about AVFoundation right now. I did as well! It turns out that .ogg isn't one of the file types supported by AVFoundation. You can look up different supported file types in the [AVFileType](https://developer.apple.com/documentation/avfoundation/avfiletype) documentation. That leaves us with two choices: 
+You're probably thinking about AVFoundation right now. I did as well! It turns out that .ogg isn't one of the file types supported by AVFoundation. You can look up different supported file types in the [AVFileType](https://developer.apple.com/documentation/avfoundation/avfiletype) documentation. That leaves us with two choices:
 
-1) Convert the audio file to one of the supported audio formats by forfeiting smaller size and high quality. 
-2) Instead of the mighty AVFoundation, use an open-source audio player kit.
+1. Convert the audio file to one of the supported audio formats by forfeiting smaller size and high quality.
+2. Instead of the mighty AVFoundation, use an open-source audio player kit.
 
-We are gonna treat option 2 as our plan A and find an alternative to AVPlayer. 
+We are gonna treat option 2 as our plan A and find an alternative to AVPlayer.
 
 Enter [VLCKit](https://code.videolan.org/videolan/VLCKit)!
 
@@ -46,11 +46,11 @@ Now, if you're as old as I am, there's a good chance that you've used the **VLC 
 
 VLC is a cross-platform multimedia player and framework that is free and open source. It can play most multimedia files. They also have an open-source library called **VLCKit**, which is a generic multimedia library that can be used for any audio or video playback needs on macOS, iOS, and tvOS.
 
-That could be exactly what we're looking for! Let's find out by creating a small SwiftUI app that attempts to play a *ogg* file using VLCKit. 
+That could be exactly what we're looking for! Let's find out by creating a small SwiftUI app that attempts to play a _ogg_ file using VLCKit.
 
 #### Getting Started
 
-Download the project materials from Github [here](https://github.com/ajithrnayak/VLCKit-Example) before we begin. You can either follow along with the starter project or jump right into the final project.  
+Download the project materials from Github [here](https://github.com/ajithrnayak/VLCKit-Example) before we begin. You can either follow along with the starter project or jump right into the final project.
 
 Now, assuming you're following along, build and run the starter project. You'll notice:
 
@@ -62,7 +62,7 @@ Ready to implement media player? Let's go ahead and integrate VLCKit.
 
 #### Installation
 
-Unfortunately, Swift Package Manager support for VLCKit is [still in the works](https://code.videolan.org/videolan/VLCKit/-/issues/302). So, we shall use Cocoapods as dependency manager. 
+Unfortunately, Swift Package Manager support for VLCKit is [still in the works](https://code.videolan.org/videolan/VLCKit/-/issues/302). So, we shall use Cocoapods as dependency manager.
 
 Let's run following command sequences to integrate the latest VLCKit into our project.
 
@@ -93,7 +93,7 @@ You've just added the dependency 'MobileVLCKit'. Before proceeding to the next s
 
 **System Dependency**
 
-It is important to note that the following system dependencies are required and must be linked into the project: 
+It is important to note that the following system dependencies are required and must be linked into the project:
 
 - AudioToolbox.framework
 
@@ -125,21 +125,21 @@ That should do it! We're all set to use VLCKit.
 
 #### Using MobileVLCKit
 
-Open the 'PlayerViewModel.swift' file and specify the following import: 
+Open the 'PlayerViewModel.swift' file and specify the following import:
 
 ```swift
 import MobileVLCKit
 ```
 
-Make a property declaration in the same file that references `VLCMediaPlayer`: 
+Make a property declaration in the same file that references `VLCMediaPlayer`:
 
 ```swift
 let mediaPlayer = VLCMediaPlayer()
 ```
 
-Now comes the first of two crucial steps, 
+Now comes the first of two crucial steps,
 
-1. Implement `loadTrack(_:)` by creating a VLCMedia object with the file url and assigning it to `mediaPlayer` instance. 
+1. Implement `loadTrack(_:)` by creating a VLCMedia object with the file url and assigning it to `mediaPlayer` instance.
 
 ```swift
 // MARK: - Load Track
@@ -154,7 +154,7 @@ func loadTrack(_ track: Track) {
 
    ```swift
    // MARK: - Controls
-   
+
    func togglePlayerState() {
        if playerState == .playing {
            playerState = .paused
@@ -164,40 +164,40 @@ func loadTrack(_ track: Track) {
            play()
        }
    }
-   
+
    func play() {
        self.mediaPlayer.play()
    }
-   
+
    func stop() {
        self.mediaPlayer.stop()
    }
-   
+
    func pause() {
        self.mediaPlayer.pause()
    }
-   
+
    func setPosition(_ position: Double) {
        self.mediaPlayer.position = Float(position)
    }
    ```
 
 Note that our UI implementation only requires 'play' and 'pause' actions, but a full player would require more controls, which I've implemented for your convenience.
-   
-Build and launch the app! 
-   
+
+Build and launch the app!
+
 Hit the play button; As expected, our audio file should play and pause.
 
 #### Updating Duration
 
-The problem statement for displaying track duration can be split into two subtasks. 
+The problem statement for displaying track duration can be split into two subtasks.
 
-1. Determining the total duration or length of the track and updating the duration label when the screen appears. 
+1. Determining the total duration or length of the track and updating the duration label when the screen appears.
 2. Second, while the audio is playing, the remaining duration is constantly updated. Similar to a countdown clock.
 
 **Determine Duration**
 
-To tackle this, we must parse the media item for metadata, which can be done either asynchronously or synchronously.  
+To tackle this, we must parse the media item for metadata, which can be done either asynchronously or synchronously.
 
 Here's a method that makes use of [lengthWaitUntilDate:](https://videolan.videolan.me/VLCKit/interface_v_l_c_media.html#a82e93da5f18bf8584beff1b714d496d4)
 
@@ -215,9 +215,9 @@ private var mediaLength: VLCTime? {
 }
 ```
 
-However, this is a blocking operation that waits up to 5 seconds before returning a result or failure. For this quick experiment, this is good enough.  I'd suggest asynchronously parsing the media item using the following approach for a real-world application.
+However, this is a blocking operation that waits up to 5 seconds before returning a result or failure. For this quick experiment, this is good enough. I'd suggest asynchronously parsing the media item using the following approach for a real-world application.
 
-Modify the implementation of `loadTrack(_:)` to subscribe delegate and initiate parsing with parsing options using [`parseWithOptions`](https://videolan.videolan.me/VLCKit/interface_v_l_c_media.html#aecfb52ec0989cd489fdc2966cd431586):. 
+Modify the implementation of `loadTrack(_:)` to subscribe delegate and initiate parsing with parsing options using [`parseWithOptions`](https://videolan.videolan.me/VLCKit/interface_v_l_c_media.html#aecfb52ec0989cd489fdc2966cd431586):.
 
 ```swift
 func loadTrack(_ track: Track) {
@@ -276,7 +276,7 @@ func setTrackDuration() {
 }
 ```
 
-Before you build and run the app, append `setTrackDuration()` to initializer. 
+Before you build and run the app, append `setTrackDuration()` to initializer.
 
 ```swift
 init(track: Track) {
@@ -285,26 +285,27 @@ init(track: Track) {
     setTrackDuration()
 }
 ```
+
 <br/>
-Bam! We got there! 
+Bam! We got there!
 
 ![Final Project Screenshot](./final_project_ss_1.png)
 
 **Countdown Timer**
 
-The possible solutions to this problem are to either maintain a 'Timer' in the project code or to use VLCKit's [time](https://videolan.videolan.me/VLCKit/interface_v_l_c_media_player.html#a5915273012b273885dd9570d56777ccf) and [remainingTime](https://videolan.videolan.me/VLCKit/interface_v_l_c_media_player.html#a994615b429c023db77a00d1efec06fd3). The former approach may give you more control during playback, but you can also keep it simple by making the best use of what's available. 
+The possible solutions to this problem are to either maintain a 'Timer' in the project code or to use VLCKit's [time](https://videolan.videolan.me/VLCKit/interface_v_l_c_media_player.html#a5915273012b273885dd9570d56777ccf) and [remainingTime](https://videolan.videolan.me/VLCKit/interface_v_l_c_media_player.html#a994615b429c023db77a00d1efec06fd3). The former approach may give you more control during playback, but you can also keep it simple by making the best use of what's available.
 
-Let's observe the `remainingTime` property and update the durationString as every second elapses. 
+Let's observe the `remainingTime` property and update the durationString as every second elapses.
 
 We can observe properties by using Foundation's key-value observing, which has [improved Swift APIs](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift), or by using Combine's [Publisher](https://developer.apple.com/documentation/combine/publisher). I chose the Publisher approach because I've been experimenting with Combine lately.
 
-Go ahead and edit `PlayerViewModel` using: 
+Go ahead and edit `PlayerViewModel` using:
 
 ```swift
 import Combine
 
 //..
-//... 
+//...
 
 var cancellable = Set<AnyCancellable>()
 
@@ -342,7 +343,7 @@ private func observeTimeElapsed() {
 }
 ```
 
-Finally, specify `setupObservers()` in the initializer. 
+Finally, specify `setupObservers()` in the initializer.
 
 ```swift
 init(track: Track) {
@@ -351,17 +352,17 @@ init(track: Track) {
     setupObservers()
 }
 ```
+
 <br/>
-Build and run! 
+Build and run!
 
 <img src="./final_project_result.gif" alt="Final Result Gif" style="zoom:33%;" />
 
-
 #### Streaming .ogg Audio File
 
-Here's a bonus tip! 
+Here's a bonus tip!
 
-If you want to stream an audio file, VLCKit can do that as well. Easy-peasy! 
+If you want to stream an audio file, VLCKit can do that as well. Easy-peasy!
 
 Copy and paste the following code block with a sample link to the .ogg file in `AudioTracks.swift`
 
@@ -371,7 +372,7 @@ static var remoteSampleFileURL: URL {
 }
 ```
 
-Next, find the following code in  `ContentView`
+Next, find the following code in `ContentView`
 
 ```swift
 Track(filePath: AudioTracks.sampleFilePath1)
@@ -382,12 +383,13 @@ and replace it with:
 ```swift
 Track(filePath: AudioTracks.remoteSampleFileURL)
 ```
+
 <br/>
-Run it! and hit the play button. Isn't this impressive? 
+Run it! and hit the play button. Isn't this impressive?
 
-#### Conclusion 
+#### Conclusion
 
-As a next step, you can look into `VLCMediaPlayerDelegate` for different ideas and options based on your needs. 
+As a next step, you can look into `VLCMediaPlayerDelegate` for different ideas and options based on your needs.
 
 ```swift
 init(track: Track) {
@@ -409,18 +411,19 @@ extension PlayerViewModel: VLCMediaPlayerDelegate {
     }
 }
 ```
+
 <br/>
 
-Finally, To summarise what I've learned, 
+Finally, To summarise what I've learned,
 
-- What exactly is an.ogg file? 
-- How do I integrate VLCKit? 
-- Using SwiftUI with MVVM pattern. 
-- Using Combine to create an observer pattern. 
-- Using VLCKit to stream an audio file without having to download it. 
+- What exactly is an.ogg file?
+- How do I integrate VLCKit?
+- Using SwiftUI with MVVM pattern.
+- Using Combine to create an observer pattern.
+- Using VLCKit to stream an audio file without having to download it.
 
 You can download the project materials from Github [here](https://github.com/ajithrnayak/VLCKit-Example).
 
-I hope you enjoyed it!  
+I hope you enjoyed it!
 
 Ciao 👋

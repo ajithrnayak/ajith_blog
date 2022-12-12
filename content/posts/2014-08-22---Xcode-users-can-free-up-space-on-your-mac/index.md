@@ -6,8 +6,8 @@ path: "/xcode-users-can-free-up-space-on-your-mac"
 category: "Guide"
 tag: "Developer Guide"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "Running out of storage space on your Mac? Are you using Xcode IDE? Note the remaining storage space and try the following steps. You're in for a treat."
 ---
 

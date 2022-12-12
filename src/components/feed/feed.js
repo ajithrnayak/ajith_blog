@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Feed = ({ posts }) => {
   return (
     <div className={styles.feed}>
-      { posts.map(post => {
+      {posts.map((post) => {
         const { timeToRead, frontmatter } = post
         return (
           <article className={styles.feed_item} key={frontmatter.path}>
@@ -17,7 +17,8 @@ const Feed = ({ posts }) => {
               </h2>
               <div className={styles.post_meta}>
                 <p>
-                  <time>{frontmatter.date}</time> {` · `} {frontmatter.tag} {` · `} {timeToRead} min read
+                  <time>{frontmatter.date}</time> {` · `} {frontmatter.tag}{" "}
+                  {` · `} {timeToRead} min read
                 </p>
               </div>
             </header>

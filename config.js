@@ -4,8 +4,10 @@ module.exports = {
   url: "https://ajith.blog",
   pathPrefix: "/",
   title: "Ajith's Blog",
-  description: "I make apps and occasionally write about my observations and frustrations from my work here. Primarily on Swift and iOS development, but also some thoughts about languages, tools, and techniques in software development.",
-  subtitle: "I occasionally blog here. Primarily on Swift and iOS development, but also some thoughts about languages, tools, and techniques in software development.",
+  description:
+    "I make apps and occasionally write about my observations and frustrations from my work here. Primarily on Swift and iOS development, but also some thoughts about languages, tools, and techniques in software development.",
+  subtitle:
+    "I occasionally blog here. Primarily on Swift and iOS development, but also some thoughts about languages, tools, and techniques in software development.",
   copyright: "Designed & developed by Ajith Renjala",
   favicon: "static/images/logo-icon.png",
   iconImage: "logo-icon.png",

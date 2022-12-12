@@ -6,8 +6,8 @@ path: "/core-data-vs-couchbase"
 category: "iOS Development"
 tag: "iOS Development"
 coverImage:
-    src: "./blog_cover.png"
-    alt: "Blog Cover Image"
+  src: "./blog_cover.png"
+  alt: "Blog Cover Image"
 excerpt: "I worked with Couchbase-Lite for a complex app, ED Controls, and, many people asked me to describe the advantages of Couchbase-Lite over Core Data, they asked me why we chose Couchbase-Lite over Core Data."
 ---
 
