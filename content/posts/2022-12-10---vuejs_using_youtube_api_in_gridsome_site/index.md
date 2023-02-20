@@ -1,5 +1,5 @@
 ---
-title: "Vue.js : Using YouTube API as a Data Source for Your Gridsome Site"
+title: "Vue.js : Effortlessly update Youtube videos on your Gridsome site"
 date: "2022-12-10T00:00:00.000Z"
 draft: false
 path: "/vuejs_using_youtube_api_in_gridsome_site"
