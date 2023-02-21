@@ -162,6 +162,10 @@ Up next, allow me to install a few of development tools that I use frequently an
 
 This is by far the best code editor I've ever used. It does so many things the right way. I'm always impressed by the user experience.
 
+**[Docker Desktop](https://www.docker.com)**
+
+An open platform for developing, shipping, and running applications.
+
 **[Sourcetree](https://www.sourcetreeapp.com)**
 
 A free (though it shouldn't be) Git client for Mac that I'm very familiar with.
@@ -226,15 +230,11 @@ Or, download the latest Node.js version from [the official Node.js website](http
 
 To confirm that this worked, you can run `npm --version` and `node --version`.
 
-#### Install Gatsby CLI
+#### Install Node Version Manager 
 
-The Gatsby command line interface (CLI) is a tool that let's me quickly run commands for developing this very own blogging website which is [built using Gatsby](https://github.com/ajithrnayak/ajith_blog/).
+Managing multiple active node.js versions is so effortless with `nvm`. 
 
-```bash
-brew install gatsby-cli
-# or
-npm install -g gatsby-cli
-```
+Follow the installation instructions from the [Readme](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 #### Install Figma
 
