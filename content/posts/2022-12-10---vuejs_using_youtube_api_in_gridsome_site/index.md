@@ -1,5 +1,5 @@
 ---
-title: "Vue.js : Effortlessly update Youtube videos on your Gridsome site"
+title: "Vue.js: Build a YouTube Uploads Feed on your Gridsome Site"
 date: "2022-12-10T00:00:00.000Z"
 draft: false
 path: "/vuejs_using_youtube_api_in_gridsome_site"
@@ -484,4 +484,19 @@ Hit refresh!
 
 That's perfect!
 
-Until the next one, take care.
+#### Wrapping up
+
+This tutorial demonstrated how to easily create a YouTube videos feed in a Gridsome site, similar to YouTube's landing [page](https://www.youtube.com), albeit with a small design twist.
+
+It certainly involved few hurdles, so let's recap what we've learned:
+
+- Gridsome is a free and open-source jamstack solution built with vuejs, one of the most loved web framework of our time.
+- We use the [YouTube Data API](https://developers.google.com/youtube/v3/docs) to request data of a Youtube channel's feed, and each request must be authenticated using a [API key](https://developers.google.com/youtube/v3/getting-started#before-you-start).
+- Keep in mind that each request, including invalid ones, has a point-based quota cost.
+- Uploaded videos for a channel are identified as playlists, and a fetch request can be made using a playlist's unique identifier (id). Hence, knowing the playlist id of the uploaded videos playlist becomes a prerequisite.
+- As a first step, the user ID or channel ID of a channel is used to determine the playlist id for uploads.
+- A request to the playlistitems endpoint with the "playlistId" parameter returns a list of recently uploaded videos.
+- The duration of a video is obtained via an additional request to the video's endpoint, and the duration data is formatted in ISO 8601 duration strings. Thus, a further conversion to a format that humans can understand is required.
+- Using vuejs, we then created a grid-style interface with custom styles.
+
+I hope you enjoyed reading; until the next one, take care.
