@@ -118,7 +118,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-optimize-svgs",
-    "gatsby-plugin-dark-mode",
     `gatsby-plugin-netlify`,
     `gatsby-link`,
     `gatsby-react-router-scroll`,
