@@ -17,6 +17,7 @@
     "disqus-react": "^1.1.5",
     "gatsby": "^5.7.0",
     "gatsby-link": "^5.7.0",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-netlify": "^5.1.0",

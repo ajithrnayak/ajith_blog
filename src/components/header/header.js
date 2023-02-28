@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <TitleAndCaption data={siteMetadata} />
-      {/* <ThemeSwitcher /> */}
+      <ThemeSwitcher />
     </header>
   )
 }
