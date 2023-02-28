@@ -20,7 +20,7 @@ export default Home
 
 export const postsQuery = graphql`
   query PostsQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         timeToRead
         frontmatter {

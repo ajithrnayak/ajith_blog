@@ -7,10 +7,7 @@ const createPages = ({ graphql, actions }) => {
   return graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+        allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
           edges {
             node {
               excerpt(truncate: true)
