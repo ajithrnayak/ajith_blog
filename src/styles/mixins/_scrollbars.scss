@@ -2,11 +2,7 @@
 https://css-tricks.com/snippets/sass/custom-scrollbars-mixin/
 */
 
-@mixin scrollbars(
-  $size,
-  $foreground-color,
-  $background-color: mix($foreground-color, white, 50%)
-) {
+@mixin scrollbars($size, $foreground-color, $background-color: #9eb0f2) {
   // For Google Chrome
   &::-webkit-scrollbar {
     width: $size;
