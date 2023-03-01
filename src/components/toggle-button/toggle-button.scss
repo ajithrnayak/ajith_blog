@@ -1,0 +1,40 @@
+@import "../../styles/theme";
+
+.toggle-button {
+  opacity: 0.65;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  box-sizing: content-box;
+  margin: 0px;
+
+  width: 48px;
+  height: 40px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  border: 1px solid #dbdcdc;
+  border-radius: 9999px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    background: #efefef;
+  }
+
+  &.selected {
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      background: #efefef;
+    }
+  }
+}
