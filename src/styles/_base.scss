@@ -131,7 +131,7 @@ ol {
 
   & li {
     padding: 0 5px;
-    @include margin-bottom(1);
+    @include margin-bottom(0.5);
 
     p {
       margin-bottom: 0;
@@ -144,8 +144,9 @@ ul {
 }
 
 p {
-  @include line-height(1);
-  @include margin-bottom(1);
+  @include line-height(1.2);
+  @include margin-top(0.7);
+  @include margin-bottom(0.7);
 }
 
 blockquote {
@@ -222,13 +223,5 @@ th,
 td {
   @include breakpoint-sm {
     font-size: $base-font-size * 0.75;
-  }
-}
-
-// Image Wrapper
-// ---------------
-#gatsby-focus-wrapper {
-  .gatsby-resp-image-wrapper {
-    max-width: 100% !important;
   }
 }
