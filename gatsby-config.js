@@ -133,5 +133,11 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: "https://snack.expo.dev/embed.js",
+      },
+    },
   ],
 }

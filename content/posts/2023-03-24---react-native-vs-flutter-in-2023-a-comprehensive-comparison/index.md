@@ -228,7 +228,7 @@ The caveat is that it is a private company, and while the framework is open-sour
 
 Here’s how we used Snack to implement our LinkHub — React Native Project:
 
-<div data-snack-id="@ajithrnayak/linkhub" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212121;border:1px solid var( - color-border);border-radius:4px;height:505px;width:100%"></div> <script async src="https://snack.expo.dev/embed.js"></script>
+<div data-snack-id="@ajithrnayak/linkhub" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212121;border:1px solid var( - color-border);border-radius:4px;height:505px;width:100%"></div>
 
 The way that Expo combines the best of the web and mobile is amazing, isn’t it?
 
