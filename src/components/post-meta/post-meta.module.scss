@@ -23,7 +23,7 @@
   color: $color-text-caption;
 
   p {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   @include breakpoint-sm {
