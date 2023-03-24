@@ -80,8 +80,6 @@ The use of JavaScript as a programming language, React-based UI components, the 
 
 So, let’s take a closer look at all of these factors and how they impact the decision to use React Native.
 
-So, let’s take a closer look at all of these factors and how they impact the decision to use React Native.
-
 ## Why Pick React Native?
 
 JavaScript is the language of the web and by far the [most popular](https://survey.stackoverflow.co/2022/#section-most-popular-technologies-programming-scripting-and-markup-languages)programming language. So the fact that React Native uses it is a major plus. Most developers are probably already familiar with it. Then there’s ReactJS, which is still the [most in-demand](https://2022.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_experience_ranking) framework for creating web apps. Together, they make up a large developer community & mature ecosystem.
