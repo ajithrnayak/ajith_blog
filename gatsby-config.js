@@ -69,7 +69,7 @@ module.exports = {
             // https://www.gatsbyjs.org/packages/gatsby-remark-images
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 700,
+              maxWidth: 900,
               linkImagesToOriginal: true,
               backgroundColor: `transparent`,
               quality: 90,
